@@ -105,15 +105,7 @@ function RemoveButton(props: {
   );
 }
 
-const RoleSelectWrapper = styled('div')`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  > div:first-child {
-    flex-grow: 1;
-  }
-`;
+const RoleSelectWrapper = <Flex direction="row" align="center">{children}</Flex>;
 
 export const GRID_TEMPLATE = `
   display: grid;

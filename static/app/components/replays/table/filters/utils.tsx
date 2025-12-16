@@ -33,17 +33,4 @@ export function generateAction({
   return onAction;
 }
 
-export const ActionMenuTrigger = styled(Button)`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.1s;
-
-  &:focus-visible,
-  &[aria-expanded='true'] {
-    opacity: 1;
-  }
-`;
+export const ActionMenuTrigger = <Flex align="center">{children}</Flex>;

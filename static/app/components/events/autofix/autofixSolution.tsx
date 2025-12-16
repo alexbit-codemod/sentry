@@ -744,11 +744,7 @@ const CustomSolutionPadding = styled('div')`
   padding: ${space(1)} ${space(0.25)} ${space(2)} ${space(0.25)};
 `;
 
-const HeaderIconWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+const HeaderIconWrapper = <Flex align="center" justify="center">{children}</Flex>;
 
 const InstructionsInputWrapper = styled('form')`
   display: flex;

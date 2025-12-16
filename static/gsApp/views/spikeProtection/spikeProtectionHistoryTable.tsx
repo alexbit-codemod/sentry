@@ -288,13 +288,7 @@ const Title = styled('div')`
   gap: ${space(0.75)};
 `;
 
-const StyledCell = styled('div')`
-  display: flex;
-  align-items: center;
-  &:nth-child(5n) {
-    justify-content: end;
-  }
-`;
+const StyledCell = <Flex align="center" justify="end">{children}</Flex>;
 
 const EmptySpikeHistory = styled(Panel)`
   width: 100%;

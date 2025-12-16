@@ -147,10 +147,7 @@ export function OrganizationAuthTokensAuthTokenRow({
 
 const Label = styled('div')``;
 
-const Actions = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-`;
+const Actions = <Flex justify="end">{children}</Flex>;
 
 const DateTime = styled('div')`
   display: flex;

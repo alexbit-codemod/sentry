@@ -647,11 +647,7 @@ const ChartHeader = styled('div')`
   margin-bottom: ${space(3)};
 `;
 
-const StyledChartControls = styled(ChartControls)`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-`;
+const StyledChartControls = <Flex justify="space-between" wrap="wrap">{children}</Flex>;
 
 const StyledInlineContainer = styled(InlineContainer)`
   grid-auto-flow: column;

@@ -241,15 +241,7 @@ const Cover = styled('div')`
   }
 `;
 
-const Placement = styled('div')`
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  place-items: center;
-`;
+const Placement = <Flex justify="center">{children}</Flex>;
 
 export const ContentSliderDiff = {
   Body,

@@ -307,15 +307,9 @@ const StyledCard = styled(Card)`
   overflow: hidden;
 `;
 
-const CardTitleContainer = styled('div')`
-  display: flex;
-  justify-content: space-between;
-`;
+const CardTitleContainer = <Flex justify="space-between">{children}</Flex>;
 
-const CardTitleContent = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const CardTitleContent = <Flex direction="column">{children}</Flex>;
 
 const CardTitle = styled('h6')`
   margin: 0;
@@ -354,13 +348,7 @@ const MemberCard = styled(Card)`
   align-items: center;
 `;
 
-const MemberCardContent = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex: 1 1;
-  min-width: 50%;
-  max-width: 75%;
-`;
+const MemberCardContent = <Flex direction="column">{children}</Flex>;
 
 const MemberCardContentRow = styled('div')`
   display: flex;

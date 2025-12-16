@@ -174,13 +174,7 @@ const StyledPanelItem = styled(PanelItem)`
   padding: ${space(1)} 0;
 `;
 
-const Columns = styled('div')`
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  min-width: 350px;
-  width: 350px;
-`;
+const Columns = <Flex align="center">{children}</Flex>;
 
 const columnStyle = css`
   flex: 1;

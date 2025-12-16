@@ -621,13 +621,7 @@ const MenuTitle = styled('span')`
   margin-right: ${space(2)};
 `;
 
-const StyledLoadingIndicator = styled(LoadingIndicator)`
-  display: flex;
-  align-items: center;
-  && {
-    margin: 0;
-  }
-`;
+const StyledLoadingIndicator = <Flex align="center">{children}</Flex>;
 
 const ClearButton = styled(Button)`
   font-size: inherit; /* Inherit font size from MenuHeader */
@@ -684,11 +678,7 @@ const StyledPositionWrapper = styled(PositionWrapper, {
   z-index: ${p => p?.zIndex};
 `;
 
-const OptionsWrap = styled('div')`
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-`;
+const OptionsWrap = <Flex direction="column">{children}</Flex>;
 
 const MenuFooter = styled('div')`
   box-shadow: 0 -1px 0 ${p => p.theme.translucentInnerBorder};

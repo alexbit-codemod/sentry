@@ -644,13 +644,7 @@ export function useSynchronizeCharts(
   ]);
 }
 
-const StyledTransparentLoadingMask = styled((props: any) => (
-  <TransparentLoadingMask {...props} maskBackgroundColor="transparent" />
-))`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+const StyledTransparentLoadingMask = <Flex justify="center" align="center">{children}</Flex>;
 
 function LoadingScreen({loading}: {loading: boolean}) {
   if (!loading) {

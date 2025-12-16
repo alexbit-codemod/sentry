@@ -105,12 +105,7 @@ function LegacyPlanToggle({onClick, subscription, checkoutTier}: Props) {
   );
 }
 
-const ToggleWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  font-weight: normal;
-  text-transform: none;
-`;
+const ToggleWrapper = <Flex align="center">{children}</Flex>;
 
 const ToggleLink = styled('a')`
   margin-right: ${space(0.5)};

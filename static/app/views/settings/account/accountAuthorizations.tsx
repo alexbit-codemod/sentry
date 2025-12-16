@@ -131,11 +131,7 @@ const PanelItemCenter = styled(PanelItem)`
   align-items: center;
 `;
 
-const ApplicationDetails = styled('div')`
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-`;
+const ApplicationDetails = <Flex direction="column">{children}</Flex>;
 
 const ApplicationName = styled('div')`
   font-weight: ${p => p.theme.fontWeight.bold};

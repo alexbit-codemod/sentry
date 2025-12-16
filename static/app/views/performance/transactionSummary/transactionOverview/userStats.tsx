@@ -163,10 +163,6 @@ function UserStats({
   );
 }
 
-const VitalsHeading = styled('div')`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
+const VitalsHeading = <Flex justify="space-between" align="center">{children}</Flex>;
 
 export default UserStats;

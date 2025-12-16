@@ -287,11 +287,7 @@ const PerCategoryBudgetContainer = styled('div')`
   align-items: center;
 `;
 
-const Category = styled('div')`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-`;
+const Category = <Flex direction="column" align="end">{children}</Flex>;
 
 const StyledPanelBody = styled(PanelBody)<{keepInline: boolean}>`
   display: flex;

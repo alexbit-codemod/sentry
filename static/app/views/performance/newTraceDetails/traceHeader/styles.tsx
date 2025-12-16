@@ -22,10 +22,7 @@ const HeaderRow = styled('div')`
   }
 `;
 
-const HeaderContent = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const HeaderContent = <Flex direction="column">{children}</Flex>;
 
 const StyledBreak = styled('hr')`
   margin: ${space(1)} 0;

@@ -94,12 +94,7 @@ export const Title = styled('div')`
   font-weight: ${p => p.theme.fontWeight.bold};
 `;
 
-export const ScoreWrapper = styled('div')`
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  max-width: 100%;
-`;
+export const ScoreWrapper = <Flex direction="row" align="baseline">{children}</Flex>;
 
 export const Score = styled('span')`
   flex-shrink: 1;

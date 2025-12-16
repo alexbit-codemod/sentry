@@ -235,12 +235,7 @@ class OwnerInput extends Component<Props, State> {
 const TEXTAREA_PADDING = 4;
 const TEXTAREA_LINE_HEIGHT = 24;
 
-const ActionBar = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
-`;
+const ActionBar = <Flex align="center" justify="space-between">{children}</Flex>;
 
 const SyntaxOverlay = styled('div')<{line: number}>`
   position: absolute;

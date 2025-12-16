@@ -356,7 +356,4 @@ const IntegrationName = styled('p')`
   padding-left: 10px;
 `;
 
-const Container = styled('div')`
-  display: flex;
-  justify-content: center;
-`;
+const Container = <Flex justify="center">{children}</Flex>;

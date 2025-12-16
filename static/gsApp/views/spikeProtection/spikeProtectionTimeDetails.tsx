@@ -54,10 +54,7 @@ const SpikeTimeDetailsWrapper = styled('div')`
   }
 `;
 
-const SpikeTimeDetailsTextWrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const SpikeTimeDetailsTextWrapper = <Flex direction="column">{children}</Flex>;
 
 const StyledIconCalendar = styled(IconCalendar)`
   margin-right: ${space(0.5)};

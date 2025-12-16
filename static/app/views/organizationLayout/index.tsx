@@ -108,11 +108,6 @@ const AppContainer = styled('div')`
   }
 `;
 
-const BodyContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-width: 0;
-`;
+const BodyContainer = <Flex direction="column">{children}</Flex>;
 
 export default OrganizationLayout;

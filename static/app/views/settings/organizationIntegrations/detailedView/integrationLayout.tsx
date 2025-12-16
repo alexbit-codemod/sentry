@@ -311,10 +311,7 @@ const IntegrationDescription = styled('div')`
   flex-grow: 1;
 `;
 
-const TopSectionWrapper = styled('div')`
-  display: flex;
-  justify-content: space-between;
-`;
+const TopSectionWrapper = <Flex justify="space-between">{children}</Flex>;
 
 const NameContainer = styled('div')`
   display: flex;
@@ -347,13 +344,7 @@ const IconCloseCircle = styled(IconClose)`
   margin-right: ${space(1)};
 `;
 
-const DisableWrapper = styled('div')`
-  margin-left: auto;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+const DisableWrapper = <Flex direction="column" align="center">{children}</Flex>;
 
 const Description = styled(MarkedText)`
   li {

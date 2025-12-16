@@ -229,12 +229,7 @@ const SchemaHintsHeader = styled('h4')`
   flex-shrink: 0;
 `;
 
-const StyledDrawerBody = styled(DrawerBody)`
-  flex: 1;
-  min-height: 0;
-  display: flex;
-  flex-direction: column;
-`;
+const StyledDrawerBody = <Flex direction="column">{children}</Flex>;
 
 const HeaderContainer = styled('div')`
   display: flex;
@@ -332,12 +327,4 @@ const StyledInputGroup = styled(InputGroup)`
   }
 `;
 
-const DrawerContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  > header {
-    flex-shrink: 0;
-  }
-`;
+const DrawerContainer = <Flex direction="column">{children}</Flex>;

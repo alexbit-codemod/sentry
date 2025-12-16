@@ -429,12 +429,7 @@ const BudgetDetails = styled('div')`
   color: ${p => p.theme.tokens.content.primary};
 `;
 
-const Title = styled('div')`
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  flex-wrap: nowrap;
-`;
+const Title = <Flex direction="row" gap="1rem" wrap="nowrap">{children}</Flex>;
 
 const Description = styled(TextBlock)`
   font-size: ${p => p.theme.fontSize.md};

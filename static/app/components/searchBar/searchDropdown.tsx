@@ -606,13 +606,7 @@ const FirstWordWrapper = styled('span')`
   font-weight: medium;
 `;
 
-const TagWrapper = styled('span')`
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-`;
+const TagWrapper = <Flex direction="row" align="center" justify="end">{children}</Flex>;
 
 const Documentation = styled('span')`
   display: flex;

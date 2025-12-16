@@ -496,10 +496,7 @@ const FormRow = styled(HalvedGrid)`
   padding: ${space(1)} ${space(2)};
 `;
 
-const InputWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const InputWrapper = <Flex align="center">{children}</Flex>;
 
 const FancyInput = styled('input')`
   line-height: 1.4;

@@ -670,10 +670,6 @@ function Table(props: Omit<Props, 'summaryConditions'> & {summaryConditions?: st
   );
 }
 
-const UnparameterizedTooltipWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+const UnparameterizedTooltipWrapper = <Flex align="center" justify="center">{children}</Flex>;
 
 export default Table;

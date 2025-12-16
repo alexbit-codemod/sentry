@@ -314,14 +314,7 @@ const StyledCompactSelect = styled(CompactSelect)`
   min-width: 0;
 `;
 
-const TriggerLabel = styled('span')`
-  text-align: left;
-  line-height: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex: 1 1;
-  min-width: 0;
-`;
+const TriggerLabel = <Flex justify="space-between">{children}</Flex>;
 
 const TriggerLabelText = styled('span')`
   ${p => p.theme.overflowEllipsis}

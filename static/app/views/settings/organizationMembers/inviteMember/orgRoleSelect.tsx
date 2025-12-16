@@ -12,12 +12,7 @@ import {space} from 'sentry/styles/space';
 import type {OrgRole} from 'sentry/types/organization';
 import TextBlock from 'sentry/views/settings/components/text/textBlock';
 
-const Label = styled('label')`
-  display: flex;
-  flex: 1;
-  align-items: center;
-  margin-bottom: 0;
-`;
+const Label = <Flex align="center">{children}</Flex>;
 
 type Props = {
   disabled: boolean;

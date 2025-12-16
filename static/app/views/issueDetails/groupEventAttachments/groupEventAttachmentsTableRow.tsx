@@ -90,11 +90,7 @@ const AttachmentName = styled('div')`
   font-weight: bold;
 `;
 
-const FlexCenter = styled('div')`
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-`;
+const FlexCenter = <Flex align="center">{children}</Flex>;
 
 const InlineAttachment = styled('div')`
   grid-column: 1/-1;

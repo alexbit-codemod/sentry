@@ -78,10 +78,7 @@ export default function ReplayPreview({
   );
 }
 
-const ReplaySectionContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const ReplaySectionContainer = <Flex direction="column">{children}</Flex>;
 
 const ReplaySectionTitle = styled('div')`
   font-size: ${p => p.theme.fontSize.md};

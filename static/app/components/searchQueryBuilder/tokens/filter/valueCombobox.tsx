@@ -959,12 +959,7 @@ export function SearchQueryBuilderValueCombobox({
   );
 }
 
-const ValueEditing = styled('div')`
-  display: flex;
-  height: 100%;
-  align-items: center;
-  max-width: 400px;
-`;
+const ValueEditing = <Flex align="center">{children}</Flex>;
 
 const TrailingWrap = styled('div')`
   display: grid;

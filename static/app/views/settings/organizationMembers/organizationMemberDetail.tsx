@@ -440,7 +440,4 @@ const DetailLabel = styled('div')`
   color: ${p => p.theme.tokens.content.primary};
 `;
 
-const Footer = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-`;
+const Footer = <Flex justify="end">{children}</Flex>;

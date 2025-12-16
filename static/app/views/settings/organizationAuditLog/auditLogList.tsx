@@ -413,11 +413,7 @@ const UserInfo = styled('div')`
   min-width: 250px;
 `;
 
-const NameContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
+const NameContainer = <Flex direction="column" justify="center">{children}</Flex>;
 
 const Note = styled('div')`
   font-size: ${p => p.theme.fontSize.sm};

@@ -252,10 +252,7 @@ function DropdownMenuList({
 
 export default DropdownMenuList;
 
-const StyledOverlay = styled(Overlay)`
-  display: flex;
-  flex-direction: column;
-`;
+const StyledOverlay = <Flex direction="column">{children}</Flex>;
 
 const DropdownMenuListWrap = styled('ul')<{hasTitle: boolean}>`
   margin: 0;

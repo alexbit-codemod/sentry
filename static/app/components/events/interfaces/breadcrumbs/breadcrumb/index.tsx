@@ -167,9 +167,4 @@ const Wrapper = styled('div')<{
 
 // Required or else the layout definiton causes the tag to stretch
 // over the entire width of the column.
-const LevelWrapper = styled('div')`
-  padding-right: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-`;
+const LevelWrapper = <Flex justify="end" align="start">{children}</Flex>;

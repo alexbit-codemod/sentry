@@ -137,11 +137,4 @@ const AllDataStoredMessage = styled('span')`
   color: ${p => p.theme.success};
 `;
 
-const InputWrapper = styled('div')`
-  height: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  flex-shrink: 0;
-  align-items: flex-end;
-`;
+const InputWrapper = <Flex direction="column" gap="4px" align="end">{children}</Flex>;

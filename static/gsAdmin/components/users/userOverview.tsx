@@ -190,9 +190,6 @@ function UserOverview({
   );
 }
 
-const ButtonWrapper = styled('div')`
-  display: flex;
-  justify-content: space-between;
-`;
+const ButtonWrapper = <Flex justify="space-between">{children}</Flex>;
 
 export default UserOverview;

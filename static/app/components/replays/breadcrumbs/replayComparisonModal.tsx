@@ -131,13 +131,7 @@ const AutoWideHovercard = styled(Hovercard)`
   width: auto;
 `;
 
-const ModalHeader = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  flex: 1;
-`;
+const ModalHeader = <Flex align="center" justify="space-between" direction="row">{children}</Flex>;
 
 const Title = styled('h4')`
   display: flex;

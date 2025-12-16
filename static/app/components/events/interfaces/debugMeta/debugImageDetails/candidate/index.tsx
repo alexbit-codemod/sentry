@@ -67,10 +67,7 @@ function Candidate({
 
 export default Candidate;
 
-const Column = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const Column = <Flex align="center">{children}</Flex>;
 
 const InformationColumn = styled(Column)`
   flex-direction: column;

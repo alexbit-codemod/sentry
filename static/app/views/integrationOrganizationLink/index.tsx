@@ -419,10 +419,4 @@ const FeatureListItem = styled('span')`
   line-height: 24px;
 `;
 
-const ButtonWrapper = styled('div')`
-  margin-left: auto;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+const ButtonWrapper = <Flex direction="column" align="center">{children}</Flex>;

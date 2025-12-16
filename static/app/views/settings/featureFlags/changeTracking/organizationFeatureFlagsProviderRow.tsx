@@ -67,10 +67,7 @@ export function OrganizationFeatureFlagsProviderRow({
   );
 }
 
-const Actions = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-`;
+const Actions = <Flex justify="end">{children}</Flex>;
 
 const DateTime = styled('div')`
   display: flex;

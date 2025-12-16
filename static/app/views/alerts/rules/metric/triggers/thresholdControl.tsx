@@ -188,12 +188,7 @@ const ThresholdContainer = styled('div')<{comparisonType: AlertRuleComparisonTyp
   align-items: center;
 `;
 
-const ThresholdInput = styled('div')`
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
+const ThresholdInput = <Flex direction="row" align="center">{children}</Flex>;
 
 const PercentWrapper = styled('div')`
   margin-left: ${space(1)};

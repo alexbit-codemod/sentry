@@ -176,31 +176,14 @@ const StyledReorderItem = styled(Reorder.Item, {
   border-radius: ${p => p.theme.radius.md};
 `;
 
-const GrabHandleWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 18px;
-  height: 18px;
-  cursor: grab;
-  z-index: 3;
-
-  &:active {
-    cursor: grabbing;
-  }
-`;
+const GrabHandleWrapper = <Flex align="center" justify="center">{children}</Flex>;
 
 const StyledInteractionStateLayer = styled(InteractionStateLayer)`
   height: 120%;
   border-radius: 4px;
 `;
 
-const LeadingItemsWrapper = styled('div')`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+const LeadingItemsWrapper = <Flex align="center" justify="center">{children}</Flex>;
 
 const TruncatedTitle = styled('div')`
   ${p => p.theme.overflowEllipsis}

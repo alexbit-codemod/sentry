@@ -418,12 +418,7 @@ const BlankAvatar = styled('div')`
   width: 90px;
 `;
 
-const BlankUploader = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-`;
+const BlankUploader = <Flex align="center" justify="center">{children}</Flex>;
 
 const AvatarActions = styled('div')`
   position: absolute;

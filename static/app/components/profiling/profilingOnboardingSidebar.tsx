@@ -370,11 +370,7 @@ const Wrapper = styled('div')`
   margin-top: ${space(2)};
 `;
 
-const Steps = styled('div')`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-`;
+const Steps = <Flex direction="column" gap="1.5rem">{children}</Flex>;
 
 const Introduction = styled('div')`
   & > p:not(:last-child) {

@@ -273,15 +273,7 @@ class MiniGraph extends Component<Props> {
   }
 }
 
-const StyledGraphContainer = styled((props: any) => (
-  <LoadingContainer {...props} maskBackgroundColor="transparent" />
-))`
-  height: 150px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+const StyledGraphContainer = <Flex justify="center" align="center">{children}</Flex>;
 
 const StyledErrorMessage = styled('div')`
   color: ${p => p.theme.subText};

@@ -198,7 +198,4 @@ const TimeContainer = styled('div')`
   line-height: 1.4;
 `;
 
-const DisplayHeader = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const DisplayHeader = <Flex direction="column">{children}</Flex>;

@@ -31,16 +31,7 @@ export const Subtitle = styled('div')`
   display: inline-block;
 `;
 
-export const StatusContainer = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1 1 auto;
-
-  .loading {
-    margin: 0 auto;
-  }
-`;
+export const StatusContainer = <Flex align="center" justify="center">{children}</Flex>;
 
 export const Accordion = styled('ul')`
   display: flex;

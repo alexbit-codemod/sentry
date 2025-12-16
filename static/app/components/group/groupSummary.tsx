@@ -489,14 +489,7 @@ const CardContentContainer = styled('div')`
   gap: ${space(1)};
 `;
 
-const CardLineDecorationWrapper = styled('div')`
-  display: flex;
-  width: 14px;
-  align-self: stretch;
-  justify-content: center;
-  flex-shrink: 0;
-  padding: 0.275rem 0;
-`;
+const CardLineDecorationWrapper = <Flex justify="center">{children}</Flex>;
 
 const CardLineDecoration = styled('div')`
   width: 1px;
@@ -524,11 +517,7 @@ const ResummarizeWrapper = styled('div')`
   flex-shrink: 0;
 `;
 
-const CollapsedContent = styled('div')`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-`;
+const CollapsedContent = <Flex direction="column">{children}</Flex>;
 
 const CollapsedHeader = styled('div')`
   cursor: pointer;

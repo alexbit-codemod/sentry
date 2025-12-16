@@ -132,12 +132,7 @@ const PanelContent = styled('div')`
   overflow: hidden;
 `;
 
-export const BlocksContainer = styled('div')`
-  flex: 1;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-`;
+export const BlocksContainer = <Flex direction="column">{children}</Flex>;
 
 const MinimizedOverlay = styled(motion.div)`
   position: absolute;

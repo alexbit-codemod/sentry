@@ -413,10 +413,7 @@ const LayoutBody = styled(Layout.Body)`
   }
 `;
 
-const LayoutMain = styled(Layout.Main)`
-  display: flex;
-  flex-direction: column;
-`;
+const LayoutMain = <Flex direction="column">{children}</Flex>;
 
 const LandingAggregateFlamegraphSizer = styled('div')`
   height: 100%;
@@ -436,12 +433,7 @@ const StyledLayoutHeader = styled(Layout.Header)`
   display: block;
 `;
 
-const StyledHeaderContent = styled(Layout.HeaderContent)`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-`;
+const StyledHeaderContent = <Flex align="center" justify="space-between" direction="row">{children}</Flex>;
 
 const ActionBar = styled('div')`
   display: grid;

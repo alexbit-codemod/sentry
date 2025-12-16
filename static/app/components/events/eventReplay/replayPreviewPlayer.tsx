@@ -246,12 +246,7 @@ const ButtonGrid = styled('div')`
   justify-content: space-between;
 `;
 
-const Container = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex: 1 1;
-  justify-content: center;
-`;
+const Container = <Flex direction="column" justify="center">{children}</Flex>;
 
 const ContextContainer = styled('div')`
   display: grid;

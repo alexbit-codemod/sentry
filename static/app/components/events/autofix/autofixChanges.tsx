@@ -491,11 +491,7 @@ const HeaderWrapper = styled('div')`
   gap: ${space(1)};
 `;
 
-const HeaderIconWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+const HeaderIconWrapper = <Flex align="center" justify="center">{children}</Flex>;
 
 const BottomDivider = styled('div')`
   border-top: 1px solid ${p => p.theme.innerBorder};

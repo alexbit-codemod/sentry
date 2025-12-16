@@ -299,13 +299,7 @@ export function Slider({
   );
 }
 
-const SliderGroup = styled('div')`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  white-space: nowrap;
-`;
+const SliderGroup = <Flex direction="column" justify="center">{children}</Flex>;
 
 const SliderLabelWrapper = styled('div')`
   display: flex;

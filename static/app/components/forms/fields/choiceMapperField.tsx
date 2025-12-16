@@ -268,10 +268,7 @@ export default class ChoiceMapperField extends Component<ChoiceMapperFieldProps>
   }
 }
 
-const Header = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const Header = <Flex align="center">{children}</Flex>;
 
 const Heading = styled('div')`
   display: flex;

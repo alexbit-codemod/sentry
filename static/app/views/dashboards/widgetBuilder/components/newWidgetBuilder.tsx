@@ -532,13 +532,7 @@ const SlideoutContainer = styled('div')`
   height: 100%;
 `;
 
-const SurroundingWidgetContainer = styled('div')`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+const SurroundingWidgetContainer = <Flex justify="center" align="center">{children}</Flex>;
 
 const FilterBarContainer = styled(motion.div)`
   margin-top: ${space(1)};

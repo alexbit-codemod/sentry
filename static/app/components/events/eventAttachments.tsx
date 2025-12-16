@@ -205,9 +205,4 @@ const Name = styled('div')`
   white-space: nowrap;
 `;
 
-const Size = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  white-space: nowrap;
-`;
+const Size = <Flex align="center" justify="end">{children}</Flex>;

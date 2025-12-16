@@ -206,13 +206,7 @@ function AITraceView({
   );
 }
 
-const StyledDrawerBody = styled(DrawerBody)`
-  padding: 0;
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-`;
+const StyledDrawerBody = <Flex direction="column">{children}</Flex>;
 
 const SplitContainer = styled('div')`
   display: flex;
@@ -240,31 +234,16 @@ const RightPanel = styled('div')`
   overflow-x: hidden;
 `;
 
-const DrawerWrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-`;
+const DrawerWrapper = <Flex direction="column">{children}</Flex>;
 
-const LoadingContainer = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  flex: 1;
-`;
+const LoadingContainer = <Flex justify="center" align="center">{children}</Flex>;
 
 const StyledDrawerHeader = styled(DrawerHeader)`
   padding: ${p => p.theme.space.md} ${p => p.theme.space.xl};
   display: flex;
 `;
 
-const HeaderContent = styled('div')`
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: space-between;
-`;
+const HeaderContent = <Flex align="center" justify="space-between">{children}</Flex>;
 
 const SpansHeader = styled('h6')`
   font-size: ${p => p.theme.fontSize.xl};

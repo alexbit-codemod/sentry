@@ -291,12 +291,7 @@ const HighlightsDescription = styled('div')`
   font-size: ${p => p.theme.fontSize.md};
 `;
 
-const HighlightsIconWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  flex: none;
-  line-height: 1;
-`;
+const HighlightsIconWrapper = <Flex align="center">{children}</Flex>;
 
 const HighlightsSubtitle = styled(Tooltip)`
   display: block;
@@ -339,12 +334,6 @@ function Highlights({rootEventResults, organization, project}: HighlightsProps) 
   );
 }
 
-const TransactionEventHighlightsWrapper = styled('span')`
-  display: flex;
-  align-items: center;
-  & > div {
-    padding: 0;
-  }
-`;
+const TransactionEventHighlightsWrapper = <Flex align="center">{children}</Flex>;
 
 export default Highlights;

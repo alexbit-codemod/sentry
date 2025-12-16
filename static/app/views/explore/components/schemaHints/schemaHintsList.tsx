@@ -477,12 +477,7 @@ const SchemaHintsContainer = styled('div')`
   }
 `;
 
-const SchemaHintsLoadingContainer = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 24px;
-`;
+const SchemaHintsLoadingContainer = <Flex justify="center" align="center">{children}</Flex>;
 
 const SchemaHintOption = styled(Button)`
   /* Ensures that filters do not grow outside of the container */

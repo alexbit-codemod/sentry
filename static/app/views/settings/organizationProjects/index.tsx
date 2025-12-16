@@ -146,11 +146,7 @@ const SearchWrapper = styled('div')`
   margin-bottom: ${space(2)};
 `;
 
-const GridPanelItem = styled(PanelItem)`
-  display: flex;
-  align-items: center;
-  padding: 0;
-`;
+const GridPanelItem = <Flex align="center">{children}</Flex>;
 
 const ProjectListItemWrapper = styled('div')`
   padding: ${space(2)};

@@ -1996,11 +1996,7 @@ const ListItemContainer = styled('li')`
   }
 `;
 
-const CheckMarkContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+const CheckMarkContainer = <Flex direction="column" align="center">{children}</Flex>;
 
 const Line = styled('div')`
   margin: ${space(0.5)} 0;
@@ -2026,11 +2022,7 @@ const CompletionNoteContainer = styled('div')`
   padding: 0 ${space(2)} 0 0;
 `;
 
-const ListItemTitleWrapper = styled('div')`
-  min-height: 20px;
-  display: flex;
-  align-items: center;
-`;
+const ListItemTitleWrapper = <Flex align="center">{children}</Flex>;
 
 const ListItemTitle = styled('p')<{status: 'none' | 'checked' | 'alert' | 'question'}>`
   font-weight: ${p => p.theme.fontWeight.bold};

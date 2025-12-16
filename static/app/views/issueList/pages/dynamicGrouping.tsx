@@ -1167,11 +1167,7 @@ function DynamicGrouping() {
   );
 }
 
-const PageWrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-`;
+const PageWrapper = <Flex direction="column">{children}</Flex>;
 
 const HeaderSection = styled('div')`
   padding: ${space(4)} ${space(4)} ${space(3)};

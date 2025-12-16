@@ -330,11 +330,7 @@ const ImageContainer = styled('div')`
   gap: ${space(0.5)};
 `;
 
-const CodeSnippetWrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-`;
+const CodeSnippetWrapper = <Flex direction="column">{children}</Flex>;
 
 const BodyContentWrapper = styled('div')<{padding: string}>`
   display: flex;

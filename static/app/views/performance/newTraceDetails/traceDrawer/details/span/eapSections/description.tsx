@@ -414,11 +414,7 @@ const ImageContainer = styled('div')`
   gap: ${space(0.5)};
 `;
 
-const CodeSnippetWrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-`;
+const CodeSnippetWrapper = <Flex direction="column">{children}</Flex>;
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -438,11 +434,7 @@ const StyledCodeSnippet = styled(CodeBlock)`
   }
 `;
 
-const FormattedDescription = styled('div')`
-  min-height: 24px;
-  display: flex;
-  align-items: center;
-`;
+const FormattedDescription = <Flex align="center">{children}</Flex>;
 
 const DescriptionWrapper = styled('div')`
   display: flex;

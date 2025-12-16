@@ -132,13 +132,7 @@ export function InputBox({
   );
 }
 
-const Wrapper = styled('div')`
-  position: relative;
-  display: flex;
-  align-items: stretch;
-  height: 100%;
-  width: 100%;
-`;
+const Wrapper = <Flex align="stretch">{children}</Flex>;
 
 const UnstyledInput = styled(Input)`
   background: transparent;

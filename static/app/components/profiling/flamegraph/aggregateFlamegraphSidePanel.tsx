@@ -264,7 +264,4 @@ const DetailsContainer = styled('div')`
   ${p => p.theme.overflowEllipsis};
 `;
 
-const ReferenceRowContainer = styled(RowContainer)`
-  display: flex;
-  justify-content: space-between;
-`;
+const ReferenceRowContainer = <Flex justify="space-between">{children}</Flex>;

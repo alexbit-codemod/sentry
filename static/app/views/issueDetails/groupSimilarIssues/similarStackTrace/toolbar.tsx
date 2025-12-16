@@ -107,13 +107,7 @@ class SimilarToolbar extends Component<Props, State> {
 }
 export default SimilarToolbar;
 
-const Columns = styled('div')`
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  min-width: 325px;
-  width: 325px;
-`;
+const Columns = <Flex align="center">{children}</Flex>;
 
 const StyledToolbarHeader = styled(ToolbarHeader)`
   flex: 1;

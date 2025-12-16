@@ -167,11 +167,7 @@ const Body = styled('div')`
   margin-bottom: ${space(2)};
 `;
 
-const InfoHeader = styled('div')`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`;
+const InfoHeader = <Flex direction="row" justify="space-between">{children}</Flex>;
 
 const ConsentHeader = styled('p')`
   font-weight: bold;
@@ -194,10 +190,7 @@ const ConsentRow = styled('div')`
   gap: ${space(3)};
 `;
 
-const ConsentLabel = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const ConsentLabel = <Flex direction="column">{children}</Flex>;
 
 const ConsentLabelHeader = styled('div')`
   font-weight: 600;

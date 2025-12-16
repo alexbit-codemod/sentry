@@ -654,12 +654,7 @@ const RuleRowContainer = styled('div')<{incompatible?: boolean}>`
   border-color: ${p => (p.incompatible ? p.theme.red200 : 'none')};
 `;
 
-const Rule = styled('div')`
-  display: flex;
-  align-items: center;
-  flex: 1;
-  flex-wrap: wrap;
-`;
+const Rule = <Flex align="center" wrap="wrap">{children}</Flex>;
 
 const DeleteButton = styled(Button)`
   flex-shrink: 0;

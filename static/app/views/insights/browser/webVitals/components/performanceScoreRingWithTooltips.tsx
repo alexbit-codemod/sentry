@@ -409,11 +409,7 @@ const Dot = styled('span')<{color: string}>`
   background-color: ${p => p.color};
 `;
 
-const TooltipRow = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
+const TooltipRow = <Flex align="center" justify="space-between">{children}</Flex>;
 
 const TooltipValue = styled('span')`
   color: ${p => p.theme.subText};

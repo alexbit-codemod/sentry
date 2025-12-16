@@ -92,7 +92,4 @@ class RedirectToProjectModal extends Component<Props, State> {
 export default withSentryRouter(RedirectToProjectModal);
 export {RedirectToProjectModal};
 
-const ButtonWrapper = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-`;
+const ButtonWrapper = <Flex justify="end">{children}</Flex>;

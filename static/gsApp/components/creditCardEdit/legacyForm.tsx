@@ -315,10 +315,6 @@ const StyledButtonBar = styled(ButtonBar)`
   max-width: fit-content;
 `;
 
-const AlertContent = styled('span')`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
+const AlertContent = <Flex align="center" justify="space-between">{children}</Flex>;
 
 export default LegacyCreditCardForm;

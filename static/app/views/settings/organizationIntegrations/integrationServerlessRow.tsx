@@ -153,12 +153,7 @@ const Item = styled('div')`
   grid-template-areas: 'function-name layer-status enable-switch';
 `;
 
-const ItemWrapper = styled('span')`
-  height: 32px;
-  vertical-align: middle;
-  display: flex;
-  align-items: center;
-`;
+const ItemWrapper = <Flex align="center">{children}</Flex>;
 
 const NameWrapper = styled(ItemWrapper)`
   grid-area: function-name;
@@ -174,10 +169,7 @@ const StyledSwitch = styled(Switch)`
 
 const UpdateButton = styled(Button)``;
 
-const NameRuntimeVersionWrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const NameRuntimeVersionWrapper = <Flex direction="column">{children}</Flex>;
 
 const Name = styled(`span`)`
   padding-bottom: ${space(1)};

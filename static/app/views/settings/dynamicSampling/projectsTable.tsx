@@ -497,19 +497,7 @@ const SubProjects = styled(SubContent)`
   margin-left: ${space(2)};
 `;
 
-const HiddenButton = styled('button')`
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-
-  /* Overwrite the platform icon's cursor style */
-  &:not([disabled]) img {
-    cursor: pointer;
-  }
-`;
+const HiddenButton = <Flex align="center">{children}</Flex>;
 
 const StyledIconChevron = styled(IconChevron)`
   height: 12px;

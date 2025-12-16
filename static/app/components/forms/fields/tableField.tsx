@@ -203,17 +203,9 @@ const HeaderLabel = styled('div')`
   color: ${p => p.theme.subText};
 `;
 
-const HeaderContainer = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const HeaderContainer = <Flex align="center">{children}</Flex>;
 
-const Header = styled('div')`
-  display: flex;
-  flex: 1 0 0;
-  align-items: center;
-  justify-content: space-between;
-`;
+const Header = <Flex align="center" justify="space-between">{children}</Flex>;
 
 const RowContainer = styled('div')`
   display: flex;

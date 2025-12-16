@@ -133,8 +133,4 @@ const Status = styled('div')`
   align-items: center;
 `;
 
-const FieldWrapper = styled('div')`
-  position: relative;
-  display: flex;
-  align-items: center;
-`;
+const FieldWrapper = <Flex align="center">{children}</Flex>;

@@ -181,10 +181,7 @@ export const DetailsContent = styled(StyledPanel)`
   padding: ${space(1)} ${space(2)};
 `;
 
-export const LogFirstCellContent = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+export const LogFirstCellContent = <Flex align="center">{children}</Flex>;
 
 export const LogBasicRendererContainer = styled('span')<{align?: 'left' | 'right'}>`
   ${NumberContainer} {
@@ -293,11 +290,7 @@ export const LogsItemContainer = styled('div')`
   margin-bottom: ${space(1)};
 `;
 
-export const LogsTableActionsContainer = styled(LogsItemContainer)`
-  margin-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-`;
+export const LogsTableActionsContainer = <Flex justify="space-between">{children}</Flex>;
 
 export const LogsGraphContainer = styled(LogsItemContainer)`
   display: flex;

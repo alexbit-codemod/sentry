@@ -368,10 +368,7 @@ function CheckoutOverviewV2({activePlan, formData, onUpdate: _onUpdate}: Props) 
   );
 }
 
-const StyledPanel = styled(Panel)`
-  display: flex;
-  flex-direction: column;
-`;
+const StyledPanel = <Flex direction="column">{children}</Flex>;
 
 const PanelChild = styled('div')`
   margin: ${space(2)};
@@ -473,12 +470,7 @@ const ReservedNumberEmphasisText = styled(EmphasisText)`
   color: ${p => p.theme.purple300};
 `;
 
-const DefaultAmountTag = styled(Tag)`
-  max-width: fit-content;
-  display: flex;
-  align-items: center;
-  line-height: normal;
-`;
+const DefaultAmountTag = <Flex align="center">{children}</Flex>;
 
 const SubscriptionTotal = styled(PanelChild)`
   background-color: ${p => p.theme.backgroundSecondary};

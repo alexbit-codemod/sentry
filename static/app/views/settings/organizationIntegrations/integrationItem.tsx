@@ -27,10 +27,7 @@ function IntegrationItem({integration, compact = false}: Props) {
 
 export default IntegrationItem;
 
-const Flex = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const Flex = <Flex align="center">{children}</Flex>;
 
 const Labels = styled('div')<{compact: boolean}>`
   box-sizing: border-box;

@@ -325,12 +325,7 @@ const RightAligned = styled('span')`
   text-align: right;
 `;
 
-const ScoreWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  text-align: right;
-`;
+const ScoreWrapper = <Flex align="center" justify="end">{children}</Flex>;
 
 const PaddedIconArrow = styled(IconArrow)`
   margin: 0 ${space(0.5)};

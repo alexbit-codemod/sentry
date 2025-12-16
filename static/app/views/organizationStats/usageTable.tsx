@@ -188,12 +188,7 @@ const StyledPanelTable = styled(PanelTable)`
   }
 `;
 
-export const CellStat = styled('div')`
-  display: flex;
-  align-items: center;
-  font-variant-numeric: tabular-nums;
-  justify-content: right;
-`;
+export const CellStat = <Flex align="center" justify="right">{children}</Flex>;
 
 export const CellProject = styled(CellStat)`
   justify-content: left;

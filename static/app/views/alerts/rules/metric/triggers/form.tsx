@@ -281,21 +281,12 @@ class TriggerFormContainer extends Component<TriggerFormContainerProps> {
   }
 }
 
-const TriggerLabel = styled('div')`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
+const TriggerLabel = <Flex direction="row" align="center">{children}</Flex>;
 
 const StyledIconDiamond = styled(IconDiamond)`
   margin-right: ${space(0.75)};
 `;
 
-const StyledField = styled(FieldGroup)`
-  & > label > div:first-child > span {
-    display: flex;
-    flex-direction: row;
-  }
-`;
+const StyledField = <Flex direction="row">{children}</Flex>;
 
 export default withConfig(withApi(TriggerFormContainer));

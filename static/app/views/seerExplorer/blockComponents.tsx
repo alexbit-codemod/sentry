@@ -422,11 +422,7 @@ const Block = styled('div')<{isFocused?: boolean; isLast?: boolean}>`
   flex-shrink: 0; /* Prevent blocks from shrinking */
 `;
 
-const BlockRow = styled('div')`
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-`;
+const BlockRow = <Flex align="start">{children}</Flex>;
 
 const BlockChevronIcon = styled(IconChevron)`
   color: ${p => p.theme.subText};

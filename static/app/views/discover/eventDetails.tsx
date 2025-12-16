@@ -98,12 +98,6 @@ function EventDetails({params}: Props) {
   return <LoadingError message={t('Failed to load the details for the event')} />;
 }
 
-const LoadingWrapper = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  height: 100%;
-`;
+const LoadingWrapper = <Flex justify="center" align="center">{children}</Flex>;
 
 export default EventDetails;

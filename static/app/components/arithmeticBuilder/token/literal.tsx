@@ -322,12 +322,7 @@ const Row = styled('div')`
   }
 `;
 
-const GridCell = styled('div')`
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 100%;
-`;
+const GridCell = <Flex align="center">{children}</Flex>;
 
 const LeftGridCell = styled(GridCell)`
   padding-left: ${space(0.5)};

@@ -201,10 +201,7 @@ const PartnerPlanHeading = styled('div')`
   }
 `;
 
-const PathWrapper = styled('div')`
-  display: flex;
-  justify-content: space-between;
-`;
+const PathWrapper = <Flex justify="space-between">{children}</Flex>;
 
 const PathContainer = styled('div')`
   padding: ${space(3)};

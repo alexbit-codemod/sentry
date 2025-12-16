@@ -324,10 +324,7 @@ export const OpsDot = styled('div')`
   border-radius: 100%;
 `;
 
-const OpsContent = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const OpsContent = <Flex align="center">{children}</Flex>;
 
 const OpsNameContainer = styled(OpsContent)`
   overflow: hidden;

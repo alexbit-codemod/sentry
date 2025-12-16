@@ -371,22 +371,7 @@ const LogoSvg = styled(LogoSentry)`
   color: ${p => p.theme.tokens.content.primary};
 `;
 
-const OnboardingStep = styled((props: React.ComponentProps<typeof motion.div>) => (
-  <motion.div
-    initial="initial"
-    animate="animate"
-    exit="exit"
-    variants={{animate: {}}}
-    transition={testableTransition({
-      staggerChildren: 0.2,
-    })}
-    {...props}
-  />
-))`
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-`;
+const OnboardingStep = <Flex direction="column">{children}</Flex>;
 
 const AdaptivePageCorners = styled(PageCorners)`
   --corner-scale: 1;
@@ -412,10 +397,6 @@ const BackMotionDiv = styled(motion.div)`
   }
 `;
 
-const OnboardingWrapper = styled('main')`
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-`;
+const OnboardingWrapper = <Flex direction="column">{children}</Flex>;
 
 export default RelocationOnboarding;

@@ -233,11 +233,7 @@ const IdentityPanelItem = styled(PanelItem)`
   justify-content: space-between;
 `;
 
-const InternalContainer = styled('div')`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
+const InternalContainer = <Flex direction="row" justify="center">{children}</Flex>;
 
 const IdentityText = styled('div')<{isSingleLine?: boolean}>`
   height: 36px;

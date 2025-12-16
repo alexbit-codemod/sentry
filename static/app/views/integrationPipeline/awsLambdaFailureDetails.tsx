@@ -72,10 +72,7 @@ const Wrapper = styled('div')`
   padding: 100px 50px 50px 50px;
 `;
 
-const StyledRow = styled(PanelItem)`
-  display: flex;
-  flex-direction: column;
-`;
+const StyledRow = <Flex direction="column">{children}</Flex>;
 
 const Error = styled('span')`
   color: ${p => p.theme.subText};

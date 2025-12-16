@@ -318,10 +318,7 @@ const ChartHeader = styled(HeaderTitleLegend)`
   margin-bottom: ${space(1)};
 `;
 
-const ChartTitle = styled('header')`
-  display: flex;
-  flex-direction: row;
-`;
+const ChartTitle = <Flex direction="row">{children}</Flex>;
 
 const ChartFooter = styled(PanelFooter)`
   display: flex;

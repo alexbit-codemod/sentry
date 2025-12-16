@@ -421,10 +421,7 @@ const DetailTitle = styled('div')<{noBottomMargin?: boolean}>`
   ${p => !p.noBottomMargin && `margin-bottom: ${space(1)};`}
 `;
 
-const PromoDetailTitle = styled(DetailTitle)`
-  display: flex;
-  justify-content: end;
-`;
+const PromoDetailTitle = <Flex justify="end">{children}</Flex>;
 
 const OnDemandDetailItem = styled(DetailItem)`
   align-items: start;
@@ -454,10 +451,7 @@ const DetailPrice = styled('div')`
   justify-content: end;
 `;
 
-const PriceContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const PriceContainer = <Flex direction="column">{children}</Flex>;
 
 const DiscountWrapper = styled('div')`
   display: flex;

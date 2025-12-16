@@ -327,11 +327,7 @@ const LogoSvg = styled(LogoSentry)`
   color: ${p => p.theme.tokens.content.primary};
 `;
 
-const OnboardingStep = styled(motion.div)`
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-`;
+const OnboardingStep = <Flex direction="column">{children}</Flex>;
 
 const AdaptivePageCorners = styled(PageCorners)`
   --corner-scale: 1;
@@ -366,10 +362,6 @@ const UpsellWrapper = styled('div')`
   margin-left: auto;
 `;
 
-const OnboardingWrapper = styled('main')`
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-`;
+const OnboardingWrapper = <Flex direction="column">{children}</Flex>;
 
 export default Onboarding;

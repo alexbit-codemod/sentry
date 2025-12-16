@@ -258,10 +258,7 @@ const StyledPanelTable = styled(PanelTable)`
     `}
 `;
 
-const PaginationWrapper = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-`;
+const PaginationWrapper = <Flex justify="end">{children}</Flex>;
 
 const RowItem = styled('div')`
   display: flex;

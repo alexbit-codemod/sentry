@@ -345,10 +345,7 @@ const StyledPanelItem = styled(PanelItem)`
   flex-direction: column;
 `;
 
-const Footer = styled('div')`
-  display: flex;
-  justify-content: space-between;
-`;
+const Footer = <Flex justify="space-between">{children}</Flex>;
 
 const ContentRow = styled('div')`
   display: flex;

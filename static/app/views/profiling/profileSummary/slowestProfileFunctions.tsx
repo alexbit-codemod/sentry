@@ -274,18 +274,7 @@ const SlowestFunctionRow = styled('div')`
   margin-bottom: ${space(1)};
 `;
 
-const SlowestFunctionMainRow = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  > div:first-child {
-    min-width: 0;
-  }
-  > div:last-child {
-    white-space: nowrap;
-  }
-`;
+const SlowestFunctionMainRow = <Flex align="center" justify="space-between">{children}</Flex>;
 
 const SlowestFunctionMetricsRow = styled('div')`
   display: flex;

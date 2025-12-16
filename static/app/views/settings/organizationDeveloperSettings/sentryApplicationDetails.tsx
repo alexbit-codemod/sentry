@@ -515,12 +515,7 @@ const HiddenSecret = styled('span')`
   font-style: italic;
 `;
 
-const ClientSecret = styled('div')`
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  margin-right: 0;
-`;
+const ClientSecret = <Flex justify="right" align="center">{children}</Flex>;
 
 const AddTokenHeader = styled('div')`
   margin: -${space(1)} 0;

@@ -854,20 +854,7 @@ const TrialActions = styled('div')`
   align-items: center;
 `;
 
-const ProductTrialsDetailListContainer = styled(DetailList)`
-  align-items: baseline;
-  dt {
-    justify-self: start;
-    display: flex;
-    align-items: center;
-    min-height: 38px;
-  }
-  dd {
-    display: flex;
-    align-items: center;
-    min-height: 38px;
-  }
-`;
+const ProductTrialsDetailListContainer = <Flex align="center">{children}</Flex>;
 
 const StyledTag = styled(Tag)`
   width: fit-content;

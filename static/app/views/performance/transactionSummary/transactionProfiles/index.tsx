@@ -101,11 +101,7 @@ const FilterActions = styled('div')`
   grid-template-columns: min-content 1fr;
 `;
 
-const StyledMain = styled(Layout.Main)`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-`;
+const StyledMain = <Flex direction="column">{children}</Flex>;
 
 function ProfilesIndex() {
   const organization = useOrganization();

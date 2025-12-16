@@ -440,22 +440,9 @@ function TagsHeatMap(
   );
 }
 
-const LoadingContainer = styled('div')`
-  width: 200px;
-  height: 100px;
+const LoadingContainer = <Flex align="center" justify="center">{children}</Flex>;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const DropdownItemContainer = styled('div')`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-
-  justify-content: space-between;
-`;
+const DropdownItemContainer = <Flex direction="row" justify="space-between">{children}</Flex>;
 
 const StyledPanel = styled(Panel)`
   padding: ${space(3)} ${space(3)} 0 ${space(3)};
@@ -480,11 +467,7 @@ const StyledMenuItem = styled(MenuItem)<{width: 'small' | 'large'}>`
   }
 `;
 
-const MenuItemContent = styled('div')`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-`;
+const MenuItemContent = <Flex justify="space-between">{children}</Flex>;
 
 type DropdownItemProps = {
   children: React.ReactNode;

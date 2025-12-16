@@ -164,12 +164,7 @@ const BodyGrid = styled('main')`
   min-height: 0;
 `;
 
-const BodySlider = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  min-height: 0;
-`;
+const BodySlider = <Flex direction="column" wrap="nowrap">{children}</Flex>;
 
 const VideoSection = styled('div')`
   display: flex;

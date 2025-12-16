@@ -125,11 +125,7 @@ function WidgetBuilderDatasetSelector() {
 
 export default WidgetBuilderDatasetSelector;
 
-const DatasetChoices = styled(RadioGroup<WidgetType>)`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-`;
+const DatasetChoices = <Flex direction="row" wrap="wrap">{children}</Flex>;
 
 const StyledSectionHeader = styled(SectionHeader)`
   margin-bottom: ${space(1)};

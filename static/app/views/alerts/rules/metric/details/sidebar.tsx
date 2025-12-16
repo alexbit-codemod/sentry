@@ -344,17 +344,7 @@ const SidebarGroup = styled('div')`
   margin-bottom: ${space(3)};
 `;
 
-const HeaderItem = styled('div')`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-
-  > *:nth-child(2) {
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
-`;
+const HeaderItem = <Flex direction="column" align="center">{children}</Flex>;
 
 const Status = styled('div')`
   position: relative;

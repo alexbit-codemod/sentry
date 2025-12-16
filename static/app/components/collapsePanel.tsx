@@ -115,8 +115,4 @@ const StyledIconList = styled(IconList)`
   margin-right: ${space(1)};
 `;
 
-const ShowMoreText = styled('div')`
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-`;
+const ShowMoreText = <Flex align="center">{children}</Flex>;

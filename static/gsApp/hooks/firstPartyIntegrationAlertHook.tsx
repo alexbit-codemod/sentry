@@ -78,8 +78,4 @@ function FirstPartyIntegrationAlertHook({
 }
 export default FirstPartyIntegrationAlertHook;
 
-const InnerAlertWrapper = styled('div')`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-`;
+const InnerAlertWrapper = <Flex justify="space-between">{children}</Flex>;

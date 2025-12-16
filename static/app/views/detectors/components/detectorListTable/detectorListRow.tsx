@@ -117,10 +117,4 @@ const DetectorSimpleTableRow = styled(SimpleTable.Row)`
   }
 `;
 
-const CheckboxWrapper = styled('div')`
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-`;
+const CheckboxWrapper = <Flex align="center">{children}</Flex>;

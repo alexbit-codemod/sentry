@@ -85,12 +85,7 @@ const PanelBody = styled('div')`
   padding: ${space(2)};
 `;
 
-const Header = styled('div')`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
+const Header = <Flex align="center" justify="space-between">{children}</Flex>;
 
 const MenuContainer = styled('span')`
   display: flex;

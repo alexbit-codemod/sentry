@@ -63,7 +63,4 @@ const Grid = styled('div')`
   gap: ${space(1)};
 `;
 
-const StyledTabPanels = styled(TabPanels)`
-  display: flex;
-  flex-direction: column;
-`;
+const StyledTabPanels = <Flex direction="column">{children}</Flex>;

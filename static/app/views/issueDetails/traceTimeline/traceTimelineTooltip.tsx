@@ -143,12 +143,7 @@ function EventItem({timelineEvent, location}: EventItemProps) {
   );
 }
 
-const UnstyledUnorderedList = styled('div')`
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 220px;
-`;
+const UnstyledUnorderedList = <Flex direction="column">{children}</Flex>;
 
 const EventItemsWrapper = styled('div')<{hasTitle: boolean}>`
   display: flex;

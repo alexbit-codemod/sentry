@@ -56,9 +56,6 @@ function GroupEventAttachmentsFilter({onChange}: GroupEventAttachmentsFilterProp
   );
 }
 
-const FilterWrapper = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-`;
+const FilterWrapper = <Flex justify="end">{children}</Flex>;
 
 export default GroupEventAttachmentsFilter;

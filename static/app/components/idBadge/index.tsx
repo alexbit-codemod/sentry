@@ -24,12 +24,4 @@ function IdBadge(props: GetBadgeProps) {
 
 export default IdBadge;
 
-const InlineErrorBoundary = styled(ErrorBoundary)`
-  background-color: transparent;
-  border-color: transparent;
-  display: flex;
-  align-items: center;
-  margin-bottom: 0;
-  box-shadow: none;
-  padding: 0; /* Because badges don't have any padding, so this should make the boundary fit well */
-`;
+const InlineErrorBoundary = <Flex align="center">{children}</Flex>;

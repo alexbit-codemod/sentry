@@ -129,12 +129,7 @@ const TableCellFirst = styled(SimpleTable.HeaderCell)`
   grid-column: 1;
 `;
 
-const TableCellsRemaining = styled('div')`
-  display: flex;
-  align-items: center;
-  flex: 1;
-  grid-column: 2 / -1;
-`;
+const TableCellsRemaining = <Flex align="center">{children}</Flex>;
 
 const FullGridAlert = styled(Alert)`
   grid-column: 1 / -1;

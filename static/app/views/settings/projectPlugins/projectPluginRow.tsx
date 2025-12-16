@@ -99,17 +99,9 @@ class ProjectPluginRow extends PureComponent<Props> {
 
 export default withOrganization(ProjectPluginRow);
 
-const PluginItem = styled('div')`
-  display: flex;
-  flex: 1;
-  align-items: center;
-`;
+const PluginItem = <Flex align="center">{children}</Flex>;
 
-const PluginDescription = styled('div')`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-`;
+const PluginDescription = <Flex justify="center" direction="column">{children}</Flex>;
 
 const PluginInfo = styled('div')`
   display: flex;

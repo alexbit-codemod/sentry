@@ -300,18 +300,7 @@ const ActionBar = styled(motion.div)`
   bottom: 0;
 `;
 
-const ActionButtonWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-
-  .loading-indicator {
-    margin: 0;
-    padding: 0;
-  }
-`;
+const ActionButtonWrapper = <Flex align="center" justify="center">{children}</Flex>;
 
 const Kbd = styled('kbd')`
   font-family: ${p => p.theme.text.familyMono};

@@ -384,12 +384,7 @@ const StyledLayoutBody = styled(Layout.Body)`
   }
 `;
 
-const ActivityWrapper = styled('div')`
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  width: 100%;
-`;
+const ActivityWrapper = <Flex direction="column">{children}</Flex>;
 
 const ChartPanel = styled(Panel)`
   margin-top: ${space(2)};

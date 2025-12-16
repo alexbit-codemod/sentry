@@ -500,16 +500,7 @@ const RequestStateMessageContainer = styled('div')`
   color: ${p => p.theme.subText};
 `;
 
-const AggregateFlamegraphContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 100%;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-`;
+const AggregateFlamegraphContainer = <Flex direction="column">{children}</Flex>;
 
 interface AggregateFlamegraphToolbarProps {
   canvasPoolManager: CanvasPoolManager;
@@ -625,15 +616,7 @@ const ProfileDigestContainer = styled('div')`
   overflow: hidden;
 `;
 
-const ProfileDigestScrollContainer = styled('div')`
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-`;
+const ProfileDigestScrollContainer = <Flex direction="column">{children}</Flex>;
 
 // @ts-expect-error TS(7008): Member 'hideRegressions' implicitly has an 'any' t... Remove this comment to see the full error message
 const ProfileVisualizationContainer = styled('div')<{hideRegressions}>`
@@ -646,20 +629,7 @@ const ProfileVisualizationContainer = styled('div')<{hideRegressions}>`
   flex: 1 1 100%;
 `;
 
-const ProfileSummaryContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 100%;
-
-  /*
-   * The footer component is a sibling of this div.
-   * Remove it so the flamegraph can take up the
-   * entire screen.
-   */
-  ~ footer {
-    display: none;
-  }
-`;
+const ProfileSummaryContainer = <Flex direction="column">{children}</Flex>;
 
 const PROFILE_DIGEST_FIELDS = [
   'last_seen()',

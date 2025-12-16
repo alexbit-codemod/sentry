@@ -595,13 +595,7 @@ const TaskWrapper = styled('li')`
   }
 `;
 
-const ClickIndicator = styled('div')`
-  width: 20px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+const ClickIndicator = <Flex align="center" justify="center">{children}</Flex>;
 
 const TaskCardWrapper = styled('div')`
   position: relative;
@@ -632,12 +626,7 @@ const TaskCardDescription = styled('div')`
   }
 `;
 
-const TaskCardIcon = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
-`;
+const TaskCardIcon = <Flex align="center" justify="center">{children}</Flex>;
 
 const TaskCardActions = styled('div')`
   display: grid;

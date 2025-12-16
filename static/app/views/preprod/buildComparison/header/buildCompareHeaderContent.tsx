@@ -156,10 +156,4 @@ const AppIconPlaceholder = styled('div')`
   font-size: ${p => p.theme.fontSize.sm};
 `;
 
-const InfoIcon = styled('div')`
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+const InfoIcon = <Flex align="center" justify="center">{children}</Flex>;

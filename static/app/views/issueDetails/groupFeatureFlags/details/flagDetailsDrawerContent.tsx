@@ -269,11 +269,7 @@ const LeftAlignedValue = styled('div')`
   text-align: left;
 `;
 
-const EmptyStateContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+const EmptyStateContainer = <Flex direction="column" align="center">{children}</Flex>;
 
 const StyledEmptyStateWarning = styled(EmptyStateWarning)`
   padding: ${space(3)};

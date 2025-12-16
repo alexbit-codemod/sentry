@@ -247,10 +247,7 @@ export default function SeerSection({
   );
 }
 
-const SeerSectionContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const SeerSectionContainer = <Flex direction="column">{children}</Flex>;
 
 const Summary = styled('div')`
   margin-bottom: ${space(0.5)};

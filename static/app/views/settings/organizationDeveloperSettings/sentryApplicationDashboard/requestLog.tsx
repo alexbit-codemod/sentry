@@ -278,22 +278,7 @@ const OverflowBox = styled('div')`
   word-break: break-word;
 `;
 
-const PaginationButtons = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-  > :first-child {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  > :nth-child(2) {
-    margin-left: -1px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-`;
+const PaginationButtons = <Flex justify="end" align="center">{children}</Flex>;
 
 const RequestLogFilters = styled('div')`
   display: flex;

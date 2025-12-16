@@ -1,6 +1,3 @@
 import styled from '@emotion/styled';
 
-export const FieldQuestion = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+export const FieldQuestion = <Flex align="center">{children}</Flex>;

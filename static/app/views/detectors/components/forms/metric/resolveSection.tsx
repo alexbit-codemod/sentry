@@ -180,10 +180,7 @@ export function ResolveSection() {
   );
 }
 
-const FormRow = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const FormRow = <Flex direction="column">{children}</Flex>;
 
 const StyledRadioField = styled(RadioField)`
   flex: 1;

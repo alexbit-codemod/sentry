@@ -50,10 +50,7 @@ function HighlightedFeature({feature, organization, subscription}: Props) {
   );
 }
 
-const Description = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const Description = <Flex direction="column">{children}</Flex>;
 
 const FeatureImg = styled('img')`
   margin: ${space(2)} 0;

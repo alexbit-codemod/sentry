@@ -132,10 +132,6 @@ const NotificationActionCell = styled('div')`
   gap: ${space(0.5)};
 `;
 
-const NotificationActionFormContainer = styled('div')`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-`;
+const NotificationActionFormContainer = <Flex justify="space-between">{children}</Flex>;
 
 export default SlackForm;

@@ -102,8 +102,4 @@ export function useSamplesDrawer({
   }, [shouldDrawerOpen, openSamplesDrawer]);
 }
 
-const FullHeightWrapper = styled('div')`
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-`;
+const FullHeightWrapper = <Flex direction="column">{children}</Flex>;

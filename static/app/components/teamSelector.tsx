@@ -25,10 +25,7 @@ import useApi from 'sentry/utils/useApi';
 import useOrganization from 'sentry/utils/useOrganization';
 import {useTeams} from 'sentry/utils/useTeams';
 
-const UnassignedWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const UnassignedWrapper = <Flex align="center">{children}</Flex>;
 
 const StyledIconUser = styled(IconUser)`
   margin-left: ${space(0.25)};

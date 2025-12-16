@@ -1386,18 +1386,9 @@ const LegendBudgetContainer = styled('div')`
   column-gap: ${space(1)};
   white-space: nowrap;
 `;
-const PlanUseBarContainer = styled('div')`
-  display: flex;
-  height: 16px;
-  width: 100%;
-  overflow: hidden;
-  gap: 2px;
-`;
+const PlanUseBarContainer = <Flex gap="2px">{children}</Flex>;
 
-const PlanUseBarGroup = styled('div')`
-  display: flex;
-  gap: 2px;
-`;
+const PlanUseBarGroup = <Flex gap="2px">{children}</Flex>;
 
 const PlanUseBar = styled('div')`
   height: 100%;

@@ -99,11 +99,7 @@ const SubscriptionGridItem = styled('div')<{disabled: boolean}>`
   box-sizing: border-box;
 `;
 
-const SubscriptionInfo = styled('div')`
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-`;
+const SubscriptionInfo = <Flex direction="column">{children}</Flex>;
 
 const SubscriptionDescription = styled('div')`
   font-size: ${p => p.theme.fontSize.md};

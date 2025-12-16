@@ -125,10 +125,7 @@ const Wrapper = styled('div')`
   gap: ${space(1)};
 `;
 
-const Content = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const Content = <Flex direction="column">{children}</Flex>;
 
 const StyledPluginIcon = styled(PluginIcon)`
   flex-shrink: 0;

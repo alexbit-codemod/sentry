@@ -362,9 +362,4 @@ const Body = styled('div')`
 const Description = styled('div')`
   text-wrap: pretty;
 `;
-const ActionContainer = styled('div')`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-`;
+const ActionContainer = <Flex direction="row" justify="space-between" align="center">{children}</Flex>;

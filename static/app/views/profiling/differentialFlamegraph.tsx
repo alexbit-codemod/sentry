@@ -344,15 +344,7 @@ function DifferentialFlamegraphView() {
   );
 }
 
-const DifferentialFlamegraphContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-
-  ~ footer {
-    display: none;
-  }
-`;
+const DifferentialFlamegraphContainer = <Flex direction="column">{children}</Flex>;
 
 function DifferentialFlamegraphWithProviders() {
   return (

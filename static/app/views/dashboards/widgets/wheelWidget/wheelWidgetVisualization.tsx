@@ -60,11 +60,7 @@ export function WheelWidgetVisualization({
   );
 }
 
-const Centered = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+const Centered = <Flex justify="center" align="center">{children}</Flex>;
 
 const Container = styled('div')`
   padding: 0 ${space(2)};

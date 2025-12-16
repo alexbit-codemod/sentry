@@ -184,11 +184,7 @@ const Step = styled('div')`
   }
 `;
 
-const StepContainer = styled('div')`
-  display: flex;
-  align-items: flex-start;
-  flex-grow: 1;
-`;
+const StepContainer = <Flex align="start">{children}</Flex>;
 
 const StepContent = styled('div')`
   &::before {

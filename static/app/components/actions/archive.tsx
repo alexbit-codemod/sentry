@@ -358,11 +358,7 @@ const DropdownTrigger = styled(Button)`
   border-left: none;
 `;
 
-const MenuWrapper = styled('div')`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
+const MenuWrapper = <Flex justify="space-between" align="center">{children}</Flex>;
 
 const StyledExternalLink = styled(ExternalLink)`
   font-weight: ${p => p.theme.fontWeight.normal};

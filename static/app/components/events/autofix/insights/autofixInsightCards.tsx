@@ -126,12 +126,7 @@ export default function AutofixInsightCards(props: AutofixInsightCardsProps) {
   return <AutofixInsightCardsDisplay {...props} />;
 }
 
-const HeaderWrapper = styled('div')`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-`;
+const HeaderWrapper = <Flex wrap="wrap" align="center" justify="space-between">{children}</Flex>;
 
 const HeaderText = styled('div')`
   font-weight: ${p => p.theme.fontWeight.bold};
@@ -161,11 +156,7 @@ const VerticalLine = styled('div')`
   margin-left: 16px;
 `;
 
-const CardsStack = styled('div')`
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-`;
+const CardsStack = <Flex direction="column" gap="0">{children}</Flex>;
 
 const InsightsCardContainer = styled('div')`
   border: 1px solid ${p => p.theme.border};

@@ -117,7 +117,4 @@ function MetricsSwitchHandler({
   return <Fragment>{switcherChildren(outcome)}</Fragment>;
 }
 
-const LoadingContainer = styled('div')`
-  display: flex;
-  justify-content: center;
-`;
+const LoadingContainer = <Flex justify="center">{children}</Flex>;
