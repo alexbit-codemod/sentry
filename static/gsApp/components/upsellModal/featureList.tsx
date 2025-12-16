@@ -103,10 +103,7 @@ const CountdownRing = withTheme(({theme, id, totalTime}: CountdownRingProps) => 
   );
 });
 
-const RingContainer = styled(motion.div)`
-  display: flex;
-  align-items: center;
-`;
+const RingContainer = <Flex align="center">{children}</Flex>;
 
 const Heading = styled('div')`
   font-weight: bold;

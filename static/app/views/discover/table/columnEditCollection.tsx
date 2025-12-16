@@ -735,12 +735,7 @@ const Ghost = styled('div')`
   }
 `;
 
-const OnDemandContainer = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-`;
+const OnDemandContainer = <Flex align="center" justify="center">{children}</Flex>;
 
 const DragPlaceholder = styled('div')`
   margin: 0 ${space(3)} ${space(1)} ${space(3)};

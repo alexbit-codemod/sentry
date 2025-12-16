@@ -215,12 +215,7 @@ export function AddAutofixRepoModalContent({
   );
 }
 
-const FooterRow = styled('div')`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-`;
+const FooterRow = <Flex justify="space-between" align="center">{children}</Flex>;
 
 const ModalReposContainer = styled('div')`
   height: 35vh;

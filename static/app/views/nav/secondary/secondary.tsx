@@ -358,11 +358,7 @@ const SectionTitleLabelWrap = styled('div')`
   text-align: left;
 `;
 
-const TrailingItems = styled('div')`
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-`;
+const TrailingItems = <Flex align="center">{children}</Flex>;
 
 const SeparatorWrapper = styled('div')`
   margin: ${space(1.5)} 0;

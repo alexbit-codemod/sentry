@@ -346,10 +346,7 @@ const ReplayCountHeader = styled('div')`
   gap: ${space(1)};
 `;
 
-const ReplayHeader = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const ReplayHeader = <Flex direction="column">{children}</Flex>;
 
 const StyledBreak = styled('hr')`
   margin-top: ${space(1)};

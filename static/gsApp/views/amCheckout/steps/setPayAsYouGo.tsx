@@ -415,13 +415,7 @@ const Description = styled(TextBlock)`
   margin: 0;
 `;
 
-const SuggestedAmountTag = styled(Tag)`
-  max-width: fit-content;
-  justify-self: center;
-  display: flex;
-  align-items: center;
-  line-height: normal;
-`;
+const SuggestedAmountTag = <Flex align="center">{children}</Flex>;
 
 const CategoryInfoDescription = styled(Description)`
   font-size: ${p => p.theme.fontSize.sm};

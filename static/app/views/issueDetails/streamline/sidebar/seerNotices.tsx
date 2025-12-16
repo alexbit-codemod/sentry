@@ -590,11 +590,7 @@ const StyledAlert = styled(Alert)`
   margin-bottom: ${space(2)};
 `;
 
-const NoticesContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-`;
+const NoticesContainer = <Flex direction="column" align="stretch">{children}</Flex>;
 
 const CardDescription = styled('div')`
   display: flex;
@@ -637,12 +633,7 @@ const StepTextCol = styled('div')`
   min-width: 0;
 `;
 
-const StepImageCol = styled('div')`
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-grow: 1;
-`;
+const StepImageCol = <Flex align="end" justify="end">{children}</Flex>;
 
 const StepsHeader = styled('h3')`
   display: flex;

@@ -457,14 +457,7 @@ function CellAction({
 
 export default CellAction;
 
-const Container = styled('div')`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
+const Container = <Flex direction="column" justify="center">{children}</Flex>;
 
 const ActionMenuTrigger = styled(Button)`
   position: absolute;

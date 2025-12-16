@@ -161,10 +161,7 @@ const VersionText = styled('span')<{
   white-space: ${p => (p.shouldWrapText ? 'normal' : 'nowrap')};
 `;
 
-const TooltipContent = styled('span')`
-  display: flex;
-  align-items: center;
-`;
+const TooltipContent = <Flex align="center">{children}</Flex>;
 
 const TooltipVersionWrapper = styled('span')`
   ${p => p.theme.overflowEllipsis}

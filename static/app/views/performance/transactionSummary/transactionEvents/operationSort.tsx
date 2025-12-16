@@ -238,13 +238,7 @@ const DropdownMenuItem = styled(MenuItem)`
   }
 `;
 
-const MenuItemContent = styled('div')`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-`;
+const MenuItemContent = <Flex direction="row" justify="start" align="center">{children}</Flex>;
 
 const RadioLabel = styled('label')`
   display: grid;

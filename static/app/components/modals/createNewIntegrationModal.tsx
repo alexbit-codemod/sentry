@@ -138,11 +138,6 @@ const RadioChoiceDescription = styled('div')`
   line-height: 1.6em;
 `;
 
-const HeaderWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-`;
+const HeaderWrapper = <Flex align="center" justify="space-between">{children}</Flex>;
 
 export default CreateNewIntegrationModal;

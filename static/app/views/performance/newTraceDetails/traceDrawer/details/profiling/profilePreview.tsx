@@ -285,15 +285,7 @@ const StyledPanelBody = styled(PanelBody)`
   container-type: inline-size;
 `;
 
-const ImageContainer = styled('div')`
-  display: flex;
-  min-width: 200px;
-  justify-content: center;
-
-  @container (max-width: 600px) {
-    display: none;
-  }
-`;
+const ImageContainer = <Flex justify="center">{children}</Flex>;
 
 const FlamegraphContainer = styled('div')`
   height: 200px;

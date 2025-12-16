@@ -635,11 +635,7 @@ const SDKDeprecationsContainer = styled('ul')`
   margin: 0;
 `;
 
-const SDKDeprecationContainer = styled('li')`
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-`;
+const SDKDeprecationContainer = <Flex direction="row" align="baseline">{children}</Flex>;
 
 const Dot = styled('span')`
   display: inline-block;

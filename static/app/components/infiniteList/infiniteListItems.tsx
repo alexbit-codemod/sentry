@@ -122,22 +122,9 @@ function LoadingCompleteMessage() {
   return <p>{t('Nothing more to load')}</p>;
 }
 
-const FlexOverscroll = styled('div')`
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  overflow: auto;
-  overscroll-behavior: contain;
-  contain: strict;
-`;
+const FlexOverscroll = <Flex direction="column">{children}</Flex>;
 
-const FlexListContainer = styled('div')`
-  position: absolute;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-`;
+const FlexListContainer = <Flex direction="column">{children}</Flex>;
 
 const PositionedList = styled('ul')`
   position: absolute;

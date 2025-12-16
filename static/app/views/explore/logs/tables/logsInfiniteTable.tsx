@@ -721,11 +721,7 @@ export function LoadingRenderer({bytesScanned}: {bytesScanned?: number}) {
   );
 }
 
-const LoadingStateContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+const LoadingStateContainer = <Flex direction="column" align="center">{children}</Flex>;
 
 const StyledLoadingIndicator = styled(LoadingIndicator)<{
   margin: CSSProperties['margin'];
@@ -755,13 +751,7 @@ function HoveringRowLoadingRenderer({
   );
 }
 
-const CenteredEmptyStateContainer = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  min-height: 200px;
-`;
+const CenteredEmptyStateContainer = <Flex justify="center" align="center">{children}</Flex>;
 
 function BackToTopButton({
   virtualizer,

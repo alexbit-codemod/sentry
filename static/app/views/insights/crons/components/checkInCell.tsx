@@ -487,10 +487,7 @@ function ProcessingLatencyIndicator({checkIn}: ProcessingLatencyProps) {
   return <QuestionTooltip icon="info" size="sm" title={tooltipMessage} />;
 }
 
-const Status = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const Status = <Flex align="center">{children}</Flex>;
 
 const TimestampContainer = styled('div')`
   display: flex;
@@ -499,15 +496,9 @@ const TimestampContainer = styled('div')`
   font-variant-numeric: tabular-nums;
 `;
 
-const DurationContainer = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const DurationContainer = <Flex align="center">{children}</Flex>;
 
-const IssuesContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const IssuesContainer = <Flex direction="column">{children}</Flex>;
 
 const ExpectedDateTime = styled(DateTime)`
   color: ${p => p.theme.subText};

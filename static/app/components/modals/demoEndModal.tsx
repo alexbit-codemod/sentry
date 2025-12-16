@@ -149,12 +149,7 @@ export const modalCss = css`
   }
 `;
 
-const EndModal = styled('div')`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-`;
+const EndModal = <Flex direction="column" gap="20px" align="center">{children}</Flex>;
 
 const ModalHeader = styled('div')`
   p {
@@ -168,14 +163,5 @@ const ModalHeader = styled('div')`
   }
 `;
 
-const ButtonBar = styled('div')`
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  justify-content: center;
-`;
-const ButtonContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-`;
+const ButtonBar = <Flex direction="row" gap="5px" justify="center">{children}</Flex>;
+const ButtonContainer = <Flex direction="column" gap="10px">{children}</Flex>;

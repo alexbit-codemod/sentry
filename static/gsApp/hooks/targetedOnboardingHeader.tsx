@@ -93,10 +93,4 @@ const ActiveTrialHeader = styled('div')`
   color: ${p => p.theme.purple300};
 `;
 
-const ActiveTrialWrapper = styled('div')`
-  cursor: pointer;
-  line-height: normal;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-`;
+const ActiveTrialWrapper = <Flex direction="column" align="end">{children}</Flex>;

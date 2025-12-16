@@ -212,10 +212,7 @@ const Container = styled('div')`
   margin-bottom: ${space(4)};
 `;
 
-const ValueRow = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const ValueRow = <Flex align="center">{children}</Flex>;
 
 const Value = styled('span')`
   font-size: ${p => p.theme.fontSize.xl};

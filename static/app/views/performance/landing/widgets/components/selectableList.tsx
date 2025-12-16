@@ -237,11 +237,7 @@ export function ListClose(props: {
   );
 }
 
-const StyledTooltip = styled(Tooltip)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+const StyledTooltip = <Flex align="center" justify="center">{children}</Flex>;
 
 const StyledIconClose = styled(IconClose)`
   cursor: pointer;

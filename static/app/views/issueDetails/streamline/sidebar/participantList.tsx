@@ -97,10 +97,7 @@ export default function ParticipantList({
   );
 }
 
-const StyledOverlay = styled(Overlay)`
-  display: flex;
-  flex-direction: column;
-`;
+const StyledOverlay = <Flex direction="column">{children}</Flex>;
 
 const ParticipantListWrapper = styled('div')`
   max-height: 325px;

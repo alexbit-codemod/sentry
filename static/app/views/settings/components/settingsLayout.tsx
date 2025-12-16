@@ -37,15 +37,7 @@ function SettingsLayout(props: Props) {
   );
 }
 
-const SettingsColumn = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex: 1; /* so this stretches vertically so that footer is fixed at bottom */
-  min-width: 0; /* fixes problem when child content stretches beyond layout width */
-  footer {
-    margin-top: 0;
-  }
-`;
+const SettingsColumn = <Flex direction="column">{children}</Flex>;
 
 const StyledSettingsBreadcrumb = styled(SettingsBreadcrumb)`
   flex: 1;

@@ -157,11 +157,7 @@ function AvatarList({
 export default AvatarList;
 
 // used in releases list page to do some alignment
-const AvatarListWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-`;
+const AvatarListWrapper = <Flex align="center" direction="row-reverse">{children}</Flex>;
 
 const AvatarStyle = (p: {theme: Theme}) => css`
   border: 2px solid ${p.theme.tokens.background.primary};

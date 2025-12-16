@@ -334,10 +334,7 @@ function ReleaseAdoption({
   );
 }
 
-const NotAvailableWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const NotAvailableWrapper = <Flex align="center">{children}</Flex>;
 
 const ChartLabel = styled('div')<{top: string}>`
   position: absolute;

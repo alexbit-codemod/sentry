@@ -142,22 +142,7 @@ const PositionedFallingError = styled('span')`
   top: 30px;
 `;
 
-const Wrapper = styled(motion.div)`
-  position: relative;
-  margin-top: auto;
-  margin-bottom: auto;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-
-  h1 {
-    font-size: 42px;
-  }
-`;
+const Wrapper = <Flex direction="column" align="center">{children}</Flex>;
 
 const ActionItem = styled(motion.div)`
   min-height: 120px;

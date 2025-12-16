@@ -203,17 +203,8 @@ const RootAllocation = styled('div')`
   margin: ${space(2)} 0;
 `;
 
-const CreateRoot = styled('div')`
-  display: flex;
-  justify-content: space-between;
-`;
-const EnableRoot = styled('div')`
-  grid-column: -auto / span 1;
-  grid-area: bt;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+const CreateRoot = <Flex justify="space-between">{children}</Flex>;
+const EnableRoot = <Flex justify="center" align="center">{children}</Flex>;
 
 const NoRootInfo = styled('div')`
   margin-right: ${space(2)};

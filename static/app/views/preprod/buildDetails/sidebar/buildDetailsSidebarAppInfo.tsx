@@ -133,16 +133,7 @@ export function BuildDetailsSidebarAppInfo(props: BuildDetailsSidebarAppInfoProp
   );
 }
 
-const AppIcon = styled('div')`
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  background: #ff6600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-`;
+const AppIcon = <Flex align="center" justify="center">{children}</Flex>;
 
 const AppIconPlaceholder = styled('div')`
   color: white;
@@ -150,13 +141,7 @@ const AppIconPlaceholder = styled('div')`
   font-size: ${p => p.theme.fontSize.sm};
 `;
 
-const InfoIcon = styled('div')`
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+const InfoIcon = <Flex align="center" justify="center">{children}</Flex>;
 
 const InstallableLink = styled('button')`
   background: none;

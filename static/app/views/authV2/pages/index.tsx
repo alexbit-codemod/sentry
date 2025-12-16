@@ -43,12 +43,7 @@ function LoginPage() {
 
 export default LoginPage;
 
-const PageStyle = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-`;
+const PageStyle = <Flex justify="center" align="center">{children}</Flex>;
 
 const DivStyle = styled('div')`
   padding: 20px;

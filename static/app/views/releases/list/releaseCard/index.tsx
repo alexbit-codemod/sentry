@@ -283,10 +283,7 @@ function ReleaseCard({
   );
 }
 
-const VersionWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const VersionWrapper = <Flex align="center">{children}</Flex>;
 
 const StyledVersion = styled(Version)`
   ${p => p.theme.overflowEllipsis};
@@ -322,28 +319,8 @@ const ReleaseInfoSubheader = styled('div')`
   flex-grow: 1;
 `;
 
-const ReleaseInfoSubheaderUpper = styled('div')`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex: initial;
-  flex-grow: 1;
-  height: 100%;
-`;
-const FinalizeWrapper = styled('div')`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  flex: initial;
-  position: relative;
-  width: 80px;
-  margin-left: auto;
-
-  & > * {
-    position: absolute;
-    right: 0;
-  }
-`;
+const ReleaseInfoSubheaderUpper = <Flex direction="row" justify="space-between">{children}</Flex>;
+const FinalizeWrapper = <Flex direction="row" align="end">{children}</Flex>;
 
 const PackageName = styled('div')`
   font-size: ${p => p.theme.fontSize.md};
@@ -410,12 +387,7 @@ const ExpandButtonWrapper = styled('div')`
   }
 `;
 
-const CollapseButtonWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 41px;
-`;
+const CollapseButtonWrapper = <Flex align="center" justify="center">{children}</Flex>;
 
 export const ReleaseProjectsLayout = styled('div')<{
   showReleaseAdoptionStages?: boolean;

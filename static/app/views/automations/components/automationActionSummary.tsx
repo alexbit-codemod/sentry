@@ -68,9 +68,4 @@ const ActionsList = styled('span')`
   display: flex;
 `;
 
-const IconContainer = styled('div')`
-  display: flex;
-  justify-content: center;
-  width: 20px;
-  line-height: 0;
-`;
+const IconContainer = <Flex justify="center">{children}</Flex>;

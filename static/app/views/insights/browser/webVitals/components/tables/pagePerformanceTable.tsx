@@ -382,12 +382,7 @@ const StyledSearchBar = styled(SearchBar)`
   flex-grow: 1;
 `;
 
-const Wrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 0;
-`;
+const Wrapper = <Flex align="center" justify="end">{children}</Flex>;
 
 const StyledTooltip = styled(Tooltip)`
   top: 1px;

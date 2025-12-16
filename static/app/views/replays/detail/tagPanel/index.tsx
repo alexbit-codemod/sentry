@@ -98,12 +98,7 @@ const PaddedPlaceholder = styled(Placeholder)`
   padding-top: ${space(1)};
 `;
 
-const Wrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  min-height: 0;
-`;
+const Wrapper = <Flex direction="column" wrap="nowrap">{children}</Flex>;
 
 const OverflowBody = styled('section')`
   flex: 1 1 auto;

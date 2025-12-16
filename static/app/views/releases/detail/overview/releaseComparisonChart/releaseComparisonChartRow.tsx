@@ -129,11 +129,7 @@ const DescriptionCell = styled(Cell)`
   color: ${p => p.theme.tokens.content.primary};
 `;
 
-const ExpanderCell = styled(Cell)`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-`;
+const ExpanderCell = <Flex align="center" justify="end">{children}</Flex>;
 
 const TitleWrapper = styled('div')`
   display: flex;

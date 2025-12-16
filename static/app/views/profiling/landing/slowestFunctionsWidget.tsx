@@ -512,8 +512,4 @@ const FunctionName = styled(TextOverflow)`
   flex: 1 1 auto;
 `;
 
-const DropdownItem = styled('div')`
-  width: 150px;
-  display: flex;
-  justify-content: space-between;
-`;
+const DropdownItem = <Flex justify="space-between">{children}</Flex>;

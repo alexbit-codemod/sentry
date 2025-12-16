@@ -252,14 +252,7 @@ const Permission = styled('div')`
   display: flex;
 `;
 
-const Footer = styled('div')`
-  display: flex;
-  align-items: center;
-  padding: 20px 30px;
-  border-top: 1px solid #e2dee6;
-  margin: 20px -30px -30px;
-  justify-content: space-between;
-`;
+const Footer = <Flex align="center" justify="space-between">{children}</Flex>;
 
 const Title = styled('p')`
   margin-bottom: ${space(1)};

@@ -184,11 +184,7 @@ const AutoResizeParent = styled('div')`
   }
 `;
 
-const NumberAndDifferenceContainer = styled('div')`
-  display: flex;
-  align-items: flex-end;
-  gap: min(8px, 3cqw);
-`;
+const NumberAndDifferenceContainer = <Flex align="end">{children}</Flex>;
 
 const NumberContainerOverride = styled('div')`
   display: inline-flex;

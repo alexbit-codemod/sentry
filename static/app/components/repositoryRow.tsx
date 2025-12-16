@@ -135,10 +135,7 @@ const StyledButton = styled(Button)`
   margin-left: ${space(1)};
 `;
 
-const RepositoryTitleAndUrl = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const RepositoryTitleAndUrl = <Flex direction="column">{children}</Flex>;
 
 const RepositoryTitle = styled('div')`
   /* accommodate cancel button height */

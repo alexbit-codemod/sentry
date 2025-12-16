@@ -186,18 +186,7 @@ const StyledTextOverflow = styled(TextOverflow)`
   text-align: right;
 `;
 
-const ButtonContainer = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-  min-width: 0;
-  position: relative;
-  width: 100%;
-
-  & > * {
-    position: absolute;
-    right: 0;
-  }
-`;
+const ButtonContainer = <Flex justify="end">{children}</Flex>;
 
 const FinalizeButton = styled(Button)`
   font-size: ${p => p.theme.fontSize.sm};

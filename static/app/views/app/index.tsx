@@ -274,9 +274,4 @@ function App() {
 
 export default App;
 
-const MainContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  outline: none;
-`;
+const MainContainer = <Flex direction="column">{children}</Flex>;

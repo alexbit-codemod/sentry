@@ -114,18 +114,9 @@ function EntityAvatarType({
   return null;
 }
 
-const Wrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-`;
+const Wrapper = <Flex align="center">{children}</Flex>;
 
-const DisplayNameAndDescription = styled('div')`
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-  overflow: hidden;
-`;
+const DisplayNameAndDescription = <Flex direction="column">{children}</Flex>;
 
 const DisplayName = styled('span')`
   overflow: hidden;

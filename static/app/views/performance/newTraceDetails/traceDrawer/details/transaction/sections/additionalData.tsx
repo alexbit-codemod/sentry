@@ -105,8 +105,4 @@ export function AdditionalData({event}: {event: EventTransaction}) {
   );
 }
 
-const Title = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
+const Title = <Flex align="center" justify="space-between">{children}</Flex>;

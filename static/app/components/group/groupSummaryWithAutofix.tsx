@@ -382,12 +382,7 @@ const InsightGrid = styled('div')`
   }
 `;
 
-const InsightCard = styled('div')`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  overflow: hidden;
-`;
+const InsightCard = <Flex direction="column">{children}</Flex>;
 
 const CardTitle = styled('div')<{preview?: boolean}>`
   display: flex;

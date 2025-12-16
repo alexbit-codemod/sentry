@@ -384,10 +384,7 @@ const DefaultLineTitleWrapper = styled('div')<{isInAppFrame: boolean}>`
   font-style: ${p => (p.isInAppFrame ? '' : 'italic')};
 `;
 
-const LeftLineTitle = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const LeftLineTitle = <Flex align="center">{children}</Flex>;
 
 const RepeatedContent = styled(LeftLineTitle)`
   justify-content: center;

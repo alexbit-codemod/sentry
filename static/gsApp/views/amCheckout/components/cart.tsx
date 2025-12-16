@@ -981,9 +981,4 @@ function Cart({
 
 export default Cart;
 
-const StyledButton = styled(Button)`
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
-`;
+const StyledButton = <Flex align="center" justify="center">{children}</Flex>;

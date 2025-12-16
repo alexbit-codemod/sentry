@@ -150,26 +150,6 @@ function ProfileGroupTypeProvider({
   );
 }
 
-const LoadingIndicatorContainer = styled('div')`
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-`;
+const LoadingIndicatorContainer = <Flex direction="column" justify="center">{children}</Flex>;
 
-const FlamegraphContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 100%;
-
-  /*
-   * The footer component is a sibling of this div.
-   * Remove it so the flamegraph can take up the
-   * entire screen.
-   */
-  ~ footer {
-    display: none;
-  }
-`;
+const FlamegraphContainer = <Flex direction="column">{children}</Flex>;

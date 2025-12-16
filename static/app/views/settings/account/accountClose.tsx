@@ -193,9 +193,6 @@ function AccountClose() {
   );
 }
 
-const PanelLabel = styled('label')`
-  display: flex;
-  align-items: center;
-`;
+const PanelLabel = <Flex align="center">{children}</Flex>;
 
 export default AccountClose;

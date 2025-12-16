@@ -746,37 +746,11 @@ const FunctionWrapper = styled('div')<{state: 'invalid' | 'warning' | 'valid'}>`
   }
 `;
 
-const ArgumentsGridWrapper = styled('div')`
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  position: relative;
-  height: 100%;
-  flex-shrink: 1;
-  flex-grow: 0;
-`;
+const ArgumentsGridWrapper = <Flex justify="start" wrap="wrap">{children}</Flex>;
 
-const ArgumentGridCell = styled('div')`
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 100%;
-  flex: 0 1 auto;
-  max-width: fit-content;
+const ArgumentGridCell = <Flex align="center">{children}</Flex>;
 
-  > div input {
-    max-width: fit-content !important;
-    min-width: 0 !important;
-    white-space: nowrap !important;
-  }
-`;
-
-const BaseGridCell = styled('div')`
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 100%;
-`;
+const BaseGridCell = <Flex align="center">{children}</Flex>;
 
 const FunctionGridCell = styled(BaseGridCell)`
   color: ${p => p.theme.green400};

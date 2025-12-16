@@ -90,13 +90,7 @@ const RepoHeader = styled('div')`
   padding: ${space(1)} ${space(1.5)};
 `;
 
-const RepoInfoWrapper = styled('div')`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-`;
+const RepoInfoWrapper = <Flex direction="row" align="center" justify="space-between">{children}</Flex>;
 
 const RepoName = styled('div')`
   font-weight: ${p => p.theme.fontWeight.bold};

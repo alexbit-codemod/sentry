@@ -365,11 +365,7 @@ const StyledPanelTable = styled(PanelTable)<{hasTypeColumn: boolean}>`
     `}
 `;
 
-const Column = styled('div')`
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-`;
+const Column = <Flex align="center">{children}</Flex>;
 
 const ActionsColumn = styled(Column)`
   justify-content: flex-end;
@@ -383,20 +379,9 @@ const DetailsPanel = styled(Panel)`
   padding: ${space(1)} ${space(2)};
 `;
 
-const ArtifactColumn = styled('div')`
-  overflow-wrap: break-word;
-  word-break: break-all;
-  line-height: 140%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
+const ArtifactColumn = <Flex direction="column" justify="center">{children}</Flex>;
 
-const Name = styled('div')`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-`;
+const Name = <Flex justify="start" align="center">{children}</Flex>;
 
 const TypeColumn = styled('div')`
   display: flex;

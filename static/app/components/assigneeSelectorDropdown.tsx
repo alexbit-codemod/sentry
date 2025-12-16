@@ -586,11 +586,7 @@ export default function AssigneeSelectorDropdown({
   );
 }
 
-const AssigneeWrapper = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-  text-align: left;
-`;
+const AssigneeWrapper = <Flex justify="end">{children}</Flex>;
 
 const AssigneeDropdownButton = styled(DropdownButton)`
   z-index: 0;

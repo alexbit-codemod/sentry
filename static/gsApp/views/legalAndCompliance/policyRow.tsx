@@ -255,18 +255,9 @@ const PolicyTitle = styled('h6')`
   }
 `;
 
-const PolicyHeader = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
+const PolicyHeader = <Flex align="center" justify="space-between">{children}</Flex>;
 
-const PolicyActions = styled('div')`
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
+const PolicyActions = <Flex align="center" justify="space-between">{children}</Flex>;
 
 const modalCss = (theme: Theme) => css`
   @media (min-width: ${theme.breakpoints.sm}) {
@@ -274,8 +265,4 @@ const modalCss = (theme: Theme) => css`
     max-width: 1200px;
   }
 `;
-export const PolicyStatusRow = styled('div')`
-  display: flex;
-  align-items: center;
-  height: 100%;
-`;
+export const PolicyStatusRow = <Flex align="center">{children}</Flex>;

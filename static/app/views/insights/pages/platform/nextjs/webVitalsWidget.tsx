@@ -219,9 +219,4 @@ function WebVitalsWidgetVisualization({
 WebVitalsWidgetVisualization.LoadingPlaceholder =
   TimeSeriesWidgetVisualization.LoadingPlaceholder;
 
-const WebVitalsWidgetVisualizationContainer = styled('div')`
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+const WebVitalsWidgetVisualizationContainer = <Flex justify="center" align="center">{children}</Flex>;

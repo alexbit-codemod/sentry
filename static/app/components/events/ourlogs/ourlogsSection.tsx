@@ -214,7 +214,4 @@ const SmallTable = styled('table')`
   grid-template-columns: 15px auto 1fr;
 `;
 
-const SmallTableContentWrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const SmallTableContentWrapper = <Flex direction="column">{children}</Flex>;

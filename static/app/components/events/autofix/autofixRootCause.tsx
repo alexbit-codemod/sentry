@@ -702,11 +702,7 @@ const HeaderWrapper = styled('div')`
   flex-wrap: wrap;
 `;
 
-const IconWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+const IconWrapper = <Flex align="center" justify="center">{children}</Flex>;
 
 const HeaderText = styled('div')`
   font-weight: ${p => p.theme.fontWeight.bold};

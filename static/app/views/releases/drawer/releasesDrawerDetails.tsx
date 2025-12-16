@@ -352,11 +352,7 @@ const SelectableProjectBadge = styled(Link)`
   }
 `;
 
-const HeaderToolbar = styled(Header)`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
+const HeaderToolbar = <Flex justify="space-between" align="center">{children}</Flex>;
 
 const ProjectSelectContainer = styled('div')`
   display: flex;

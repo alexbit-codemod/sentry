@@ -355,10 +355,7 @@ const RightArrow = styled(IconArrow)`
   grid-area: arrow;
 `;
 
-const IntegrationIconWrapper = styled('span')`
-  display: flex;
-  align-items: center;
-`;
+const IntegrationIconWrapper = <Flex align="center">{children}</Flex>;
 
 const StyledFormField = styled(FormField)`
   padding: 0;

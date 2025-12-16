@@ -108,10 +108,7 @@ const dateTimeCss = (p: any) => css`
   justify-content: center;
 `;
 
-const HovercardWrapper = styled('div')`
-  display: flex;
-  align-items: baseline;
-`;
+const HovercardWrapper = <Flex align="baseline">{children}</Flex>;
 
 const DateWrapper = styled('div')`
   margin-bottom: 0;

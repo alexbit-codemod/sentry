@@ -116,9 +116,6 @@ function OrganizationApiKeysList({
   );
 }
 
-const Cell = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const Cell = <Flex align="center">{children}</Flex>;
 
 export default OrganizationApiKeysList;

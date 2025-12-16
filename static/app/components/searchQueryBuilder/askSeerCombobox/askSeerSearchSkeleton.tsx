@@ -40,10 +40,7 @@ const LoadingSkeleton = styled('div')`
   border-top: 1px solid ${p => p.theme.border};
 `;
 
-const SkeletonCellsContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const SkeletonCellsContainer = <Flex direction="column">{children}</Flex>;
 
 const SkeletonCell = styled('div')`
   padding: ${p => p.theme.space.lg} ${p => p.theme.space.xl};

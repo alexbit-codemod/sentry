@@ -128,21 +128,7 @@ function EditingViewTitle({
   );
 }
 
-const ViewTitleWrapper = styled(Layout.Title)`
-  display: flex;
-  align-items: center;
-  width: min-content;
-
-  :not(:hover, :focus-within) {
-    button {
-      opacity: 0;
-    }
-
-    div {
-      border-bottom-color: transparent;
-    }
-  }
-`;
+const ViewTitleWrapper = <Flex align="center">{children}</Flex>;
 
 const ViewTitle = styled('div')`
   height: 40px;

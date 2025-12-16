@@ -550,12 +550,7 @@ const StyledButtonBar = styled(ButtonBar)`
   grid-column: auto / span 1;
   grid-area: bb;
 `;
-const Dates = styled('div')`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-column: 2 / 5;
-`;
+const Dates = <Flex direction="column" align="center">{children}</Flex>;
 
 const StyledLearnMoreButton = styled(LearnMoreButton)`
   margin: ${space(0.75)};

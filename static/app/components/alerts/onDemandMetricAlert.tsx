@@ -72,18 +72,7 @@ export function OnDemandMetricAlert({
 }
 
 // @TODO(jonasbadalic): Why cant this just be Alert type=info?
-const InfoAlert = styled(Alert)`
-  display: flex;
-  align-items: flex-start;
-
-  & > span {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-
-    line-height: 1.5em;
-  }
-`;
+const InfoAlert = <Flex align="start" justify="space-between">{children}</Flex>;
 
 const HoverableIconWarning = styled(IconWarning)`
   min-width: ${p => p.theme.iconSizes.sm};

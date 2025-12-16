@@ -33,10 +33,4 @@ export function SelectAllHeaderCheckbox({
   );
 }
 
-const Wrapper = styled('div')`
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-`;
+const Wrapper = <Flex align="center">{children}</Flex>;

@@ -149,10 +149,7 @@ const PlanSubheader = styled('div')`
   font-weight: normal;
 `;
 
-const PlanHeaderCardWrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const PlanHeaderCardWrapper = <Flex direction="column">{children}</Flex>;
 
 const PaymentDetails = styled('div')`
   line-height: 1.5;

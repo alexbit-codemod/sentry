@@ -31,8 +31,4 @@ export const Divider = styled('span')`
   height: ${space(3)};
 `;
 
-export const Centered = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+export const Centered = <Flex align="center" justify="center">{children}</Flex>;

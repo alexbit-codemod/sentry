@@ -509,11 +509,7 @@ const HeaderButtonsWrapper = styled(motion.div)`
   white-space: nowrap;
 `;
 
-const AnimatedHeaderItemsContainer = styled(motion.div)`
-  grid-column: -1;
-  display: flex;
-  align-items: center;
-`;
+const AnimatedHeaderItemsContainer = <Flex align="center">{children}</Flex>;
 
 export {IssueListActions};
 

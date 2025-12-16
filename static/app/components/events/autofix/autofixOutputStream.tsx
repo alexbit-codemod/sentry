@@ -350,13 +350,7 @@ const Wrapper = styled(motion.div)`
   gap: ${space(1)};
 `;
 
-const ScaleContainer = styled(motion.div)`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  transform-origin: top left;
-`;
+const ScaleContainer = <Flex direction="column" align="start">{children}</Flex>;
 
 const shimmer = keyframes`
   0% {

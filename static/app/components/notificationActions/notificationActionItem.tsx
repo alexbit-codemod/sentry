@@ -369,11 +369,7 @@ const IconContainer = styled('div')`
   align-items: center;
 `;
 
-const NotificationActionContainer = styled('div')`
-  display: flex;
-  align-items: center;
-  width: 100%;
-`;
+const NotificationActionContainer = <Flex align="center">{children}</Flex>;
 
 const NotificationActionCell = styled('div')`
   display: flex;
@@ -382,11 +378,7 @@ const NotificationActionCell = styled('div')`
   gap: ${space(0.5)};
 `;
 
-const NotificationActionFormContainer = styled('div')`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-`;
+const NotificationActionFormContainer = <Flex justify="space-between">{children}</Flex>;
 
 const NotificationRecipientBadge = styled(Badge)`
   border-radius: ${p => p.theme.radius.md};

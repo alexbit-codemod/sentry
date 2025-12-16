@@ -678,7 +678,4 @@ const ClickableTimestamp = styled('span')`
   line-height: 1em;
 `;
 
-const Container = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const Container = <Flex align="center">{children}</Flex>;

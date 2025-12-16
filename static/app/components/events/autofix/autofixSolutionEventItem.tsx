@@ -217,14 +217,7 @@ const IconWrapper = styled('div')`
   gap: ${space(1)};
 `;
 
-const SelectionButtonWrapper = styled('div')`
-  background: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-`;
+const SelectionButtonWrapper = <Flex align="center" justify="center">{children}</Flex>;
 
 type SelectionButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   actionType: 'delete' | 'close' | 'add';

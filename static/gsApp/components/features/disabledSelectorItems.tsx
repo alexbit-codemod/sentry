@@ -109,10 +109,7 @@ const SelectorItemLabel = styled('div')`
   margin-bottom: ${space(0.25)};
 `;
 
-const UpsellLabelWrap = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const UpsellLabelWrap = <Flex align="center">{children}</Flex>;
 
 const UpsellMessage = styled('p')`
   font-size: ${p => p.theme.fontSize.sm};

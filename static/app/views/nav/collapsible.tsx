@@ -54,12 +54,4 @@ export function Collapsible({
   );
 }
 
-const CollapsableWrapper = styled(motion.div)`
-  display: flex;
-  /*
-    This column-reverse is what creates the "folder" animation effect, where children "fall out" of the header
-    when un-collapsed, and are "sucked in" to the header when collapsed, rather than a standard accordion effect.
-  */
-  flex-direction: column-reverse;
-  margin: 0;
-`;
+const CollapsableWrapper = <Flex direction="column-reverse">{children}</Flex>;

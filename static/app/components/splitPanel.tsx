@@ -213,13 +213,6 @@ const SplitPanelContainer = styled('div')<{
   }
 `;
 
-const Panel = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  flex-grow: 1;
-  min-height: 0;
-  min-width: 0;
-`;
+const Panel = <Flex direction="column" wrap="nowrap">{children}</Flex>;
 
 export default SplitPanel;

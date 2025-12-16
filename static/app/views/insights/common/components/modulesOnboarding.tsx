@@ -201,11 +201,7 @@ const Header = styled('h3')`
   margin-bottom: ${space(1)};
 `;
 
-const SplitContainer = styled(Panel)`
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-`;
+const SplitContainer = <Flex justify="center">{children}</Flex>;
 
 const ModuleInfo = styled('div')`
   flex: 5;

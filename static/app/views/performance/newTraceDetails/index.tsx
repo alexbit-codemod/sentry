@@ -218,16 +218,7 @@ function TraceViewImpl({traceSlug}: {traceSlug: string}) {
   );
 }
 
-const TraceExternalLayout = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 100%;
-  max-height: 100vh;
-
-  ~ footer {
-    display: none;
-  }
-`;
+const TraceExternalLayout = <Flex direction="column">{children}</Flex>;
 
 const FlexBox = styled('div')`
   display: flex;

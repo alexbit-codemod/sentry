@@ -230,8 +230,4 @@ const StyledPageFilterBar = styled(PageFilterBar)`
   margin-bottom: ${space(1)};
 `;
 
-const Flex = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
+const Flex = <Flex align="center" justify="space-between">{children}</Flex>;

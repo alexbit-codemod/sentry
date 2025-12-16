@@ -1173,9 +1173,4 @@ const ShowMoreTitle = styled('div')`
   }
 `;
 
-const ShowMoreButton = styled('div')`
-  grid-column: 2 / -1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-`;
+const ShowMoreButton = <Flex align="center" justify="end">{children}</Flex>;

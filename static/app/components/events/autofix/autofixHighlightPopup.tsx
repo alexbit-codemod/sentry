@@ -848,14 +848,7 @@ const ResolveButton = styled(Button)`
   margin-left: ${space(1)};
 `;
 
-const ReworkHeaderSection = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-  flex: 1;
-`;
+const ReworkHeaderSection = <Flex align="center" justify="space-between">{children}</Flex>;
 
 const HeaderRight = styled('div')`
   display: flex;

@@ -118,11 +118,7 @@ function InvoiceDetailsActions({organization, invoice, reloadInvoice}: Props) {
 
 export default InvoiceDetailsActions;
 
-const ActionContainer = styled('div')`
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-`;
+const ActionContainer = <Flex align="start" justify="end">{children}</Flex>;
 
 const EmailForm = styled('form')`
   display: grid;

@@ -136,8 +136,4 @@ export default function ContextCard({
   );
 }
 
-const Title = styled('div')`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
+const Title = <Flex justify="space-between" align="center">{children}</Flex>;

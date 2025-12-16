@@ -232,13 +232,7 @@ const StyledPanelFooter = styled(PanelFooter)`
   border-bottom-right-radius: ${p => p.theme.radius.md};
 `;
 
-const StyledLoadingIndicator = styled('div')`
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-`;
+const StyledLoadingIndicator = <Flex align="center" justify="center">{children}</Flex>;
 
 const AttachmentComponentWrapper = styled('div')`
   :hover {

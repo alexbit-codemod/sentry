@@ -178,8 +178,4 @@ const BorderedSection = styled(FluidHeight)`
   border-radius: ${p => p.theme.radius.md};
 `;
 
-const TraceViewWaterfallWrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-`;
+const TraceViewWaterfallWrapper = <Flex direction="column">{children}</Flex>;

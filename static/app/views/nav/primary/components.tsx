@@ -280,11 +280,7 @@ export function SeparatorItem({
   );
 }
 
-const SidebarListItem = styled('li')`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+const SidebarListItem = <Flex align="center" justify="center">{children}</Flex>;
 
 const SeparatorListItem = styled('li')<{hasMargin?: boolean}>`
   list-style: none;

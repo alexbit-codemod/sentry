@@ -390,10 +390,7 @@ const ActionsColumn = styled('div')`
   padding: ${space(1)};
 `;
 
-const AssigneeWrapper = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-`;
+const AssigneeWrapper = <Flex justify="end">{children}</Flex>;
 
 const IconContainer = styled('div')`
   display: flex;
@@ -403,10 +400,7 @@ const IconContainer = styled('div')`
   flex-shrink: 0;
 `;
 
-const MenuItemWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const MenuItemWrapper = <Flex align="center">{children}</Flex>;
 
 const Label = styled(TextOverflow)`
   margin-left: ${space(0.75)};

@@ -155,10 +155,7 @@ const ChartAnimationWrapper = styled('div')`
   }
 `;
 
-const ChartWrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const ChartWrapper = <Flex direction="column">{children}</Flex>;
 
 const GraphText = styled('div')`
   font-size: ${p => p.theme.fontSize.sm};

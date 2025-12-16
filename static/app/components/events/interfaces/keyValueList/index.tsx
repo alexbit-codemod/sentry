@@ -146,11 +146,7 @@ const ValueWithButtonContainer = styled('div')`
   }
 `;
 
-const ActionButtonWrapper = styled('div')`
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-`;
+const ActionButtonWrapper = <Flex align="start">{children}</Flex>;
 
 const Table = styled('table')`
   > * pre > pre {

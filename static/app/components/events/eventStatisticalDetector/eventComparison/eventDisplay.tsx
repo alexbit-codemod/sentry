@@ -309,17 +309,9 @@ const ButtonLabelWrapper = styled('span')`
   grid-template-columns: 1fr auto;
 `;
 
-const StyledControlBar = styled('div')`
-  display: flex;
-  justify-content: space-between;
-`;
+const StyledControlBar = <Flex justify="space-between">{children}</Flex>;
 
-const StyledEventControls = styled('div')`
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
-`;
+const StyledEventControls = <Flex align="center" gap="8px">{children}</Flex>;
 
 const MinimapPositioningContainer = styled('div')`
   position: absolute;

@@ -57,12 +57,7 @@ export const BarContainer = styled('div')`
   margin-left: auto;
 `;
 
-export const FlexContainer = styled('div')`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-`;
+export const FlexContainer = <Flex align="center" justify="end">{children}</Flex>;
 
 export const UserIcon = styled(IconUser)`
   margin-left: ${p => p.theme.space.md};

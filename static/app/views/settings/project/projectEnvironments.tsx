@@ -274,10 +274,7 @@ const TabsContainer = styled('div')`
   margin-bottom: ${space(2)};
 `;
 
-const Name = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const Name = <Flex align="center">{children}</Flex>;
 
 const EnvironmentButton = styled(Button)`
   margin-left: ${space(0.5)};

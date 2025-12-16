@@ -177,11 +177,7 @@ export const IconWrapper = styled('div')<{type: AlertProps['type']}>`
         : p.theme.colors.black};
 `;
 
-export const ExpandIconWrap = styled('div')`
-  display: flex;
-  align-items: center;
-  align-self: flex-start;
-`;
+export const ExpandIconWrap = <Flex align="center">{children}</Flex>;
 
 export const ExpandContainer = styled('div')<{
   showIcon: boolean;

@@ -146,11 +146,7 @@ const FormRow = styled('div')`
   margin-bottom: ${space(2)};
 `;
 
-const ComparisonContainer = styled('div')`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
+const ComparisonContainer = <Flex direction="row" align="center">{children}</Flex>;
 
 const StyledRadioGroup = styled(RadioGroup)`
   flex: 1;

@@ -934,10 +934,4 @@ const StyledLoadingError = styled(LoadingError)`
   margin: ${space(2)};
 `;
 
-const GroupTabPanels = styled(TabPanels)`
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  padding-top: 0;
-`;
+const GroupTabPanels = <Flex direction="column" justify="stretch">{children}</Flex>;

@@ -193,15 +193,6 @@ const StyledLinkButton = styled(LinkButton)`
   color: ${p => p.theme.subText};
 `;
 
-const IntegrationFlex = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const IntegrationFlex = <Flex align="center">{children}</Flex>;
 
-const IntegrationItemBox = styled('div')`
-  flex: 1 0 fit-content;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  min-width: 0;
-`;
+const IntegrationItemBox = <Flex direction="row">{children}</Flex>;

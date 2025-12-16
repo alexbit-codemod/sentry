@@ -861,11 +861,7 @@ const CheckboxWithBackground = styled(Checkbox)`
   background-color: ${p => p.theme.tokens.background.primary};
 `;
 
-const CountsWrapper = styled('div')`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-`;
+const CountsWrapper = <Flex direction="column">{children}</Flex>;
 
 const PrimaryCount = styled(Count)`
   font-size: ${p => p.theme.fontSize.md};

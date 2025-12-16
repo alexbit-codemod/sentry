@@ -155,10 +155,7 @@ const Gap = styled('td')`
   width: 20px;
 `;
 
-const Line = styled('div')`
-  display: flex;
-  flex-wrap: wrap;
-`;
+const Line = <Flex wrap="wrap">{children}</Flex>;
 
 const Word = styled('span')<{isAdded?: boolean; isRemoved?: boolean}>`
   white-space: pre-wrap;

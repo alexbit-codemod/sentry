@@ -98,11 +98,7 @@ function IssuesVisualization({groups}: {groups: Group[]}) {
 
 IssuesVisualization.LoadingPlaceholder = TimeSeriesWidgetVisualization.LoadingPlaceholder;
 
-const IssueList = styled('div')`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-`;
+const IssueList = <Flex direction="column">{children}</Flex>;
 
 const IssueRow = styled('div')<{isFirst: boolean}>`
   display: flex;

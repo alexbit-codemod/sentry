@@ -79,13 +79,7 @@ export function ProjectList({
   );
 }
 
-const ProjectListWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  padding-right: 8px;
-`;
+const ProjectListWrapper = <Flex align="center" direction="row-reverse" justify="end">{children}</Flex>;
 
 const CollapsedProjects = styled('div')`
   width: 200px;

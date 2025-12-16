@@ -210,11 +210,7 @@ const StyledPanelTable = styled(PanelTable)`
     `}
 `;
 
-const RightAligned = styled('span')`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-`;
+const RightAligned = <Flex align="center" justify="end">{children}</Flex>;
 
 const ProjectTitleContainer = styled('div')`
   ${p => p.theme.overflowEllipsis};

@@ -43,20 +43,11 @@ function NavigateToExternalLinkModal({Body, closeModal, Header, linkText}: Props
 
 export default NavigateToExternalLinkModal;
 
-const ButtonContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-`;
+const ButtonContainer = <Flex direction="column" gap="10px">{children}</Flex>;
 
 const ParagraphContainer = styled('p')`
   word-break: break-all;
   white-space: normal;
 `;
 
-const ButtonBar = styled('div')`
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  justify-content: end;
-`;
+const ButtonBar = <Flex direction="row" gap="5px" justify="end">{children}</Flex>;

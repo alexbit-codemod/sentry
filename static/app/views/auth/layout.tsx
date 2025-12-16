@@ -32,12 +32,7 @@ function Layout({children}: {children: React.ReactNode}) {
   );
 }
 
-const AuthContainer = styled('div')`
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 5vh;
-`;
+const AuthContainer = <Flex align="start" justify="center">{children}</Flex>;
 
 const AuthPanel = styled(Panel)`
   min-width: 550px;

@@ -73,10 +73,7 @@ function DisabledDateOption({value}: {value: string}) {
   );
 }
 
-const DisabledDateOptionContainer = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const DisabledDateOptionContainer = <Flex align="center">{children}</Flex>;
 
 const StyledIconBuisness = styled(IconBusiness)`
   margin-left: auto;

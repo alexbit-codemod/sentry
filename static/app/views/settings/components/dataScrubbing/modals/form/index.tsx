@@ -492,10 +492,7 @@ const DatasetRadioField = styled(RadioField)`
   }
 `;
 
-const ToggleWrapper = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-`;
+const ToggleWrapper = <Flex justify="end">{children}</Flex>;
 
 const Toggle = styled(Button)`
   font-weight: ${p => p.theme.fontWeight.bold};

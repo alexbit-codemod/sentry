@@ -311,9 +311,6 @@ const CheckboxLabel = styled('label')`
   cursor: pointer;
 `;
 
-const ButtonsFooter = styled(ControlsWrapper)`
-  display: flex;
-  justify-content: flex-end;
-`;
+const ButtonsFooter = <Flex justify="end">{children}</Flex>;
 
 export default SpecificDatePicker;

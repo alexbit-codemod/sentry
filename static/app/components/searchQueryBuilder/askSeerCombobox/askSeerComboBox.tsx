@@ -580,8 +580,4 @@ const SeerFooter = styled('div')`
   background-color: ${p => p.theme.tokens.background.primary};
 `;
 
-const SeerContent = styled('div')`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-`;
+const SeerContent = <Flex direction="column">{children}</Flex>;

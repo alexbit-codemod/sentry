@@ -228,10 +228,7 @@ export function LogsAggregateTable({
   );
 }
 
-const TableContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const TableContainer = <Flex direction="column">{children}</Flex>;
 
 const TopResultsIndicator = styled('div')<{color: string}>`
   position: absolute;

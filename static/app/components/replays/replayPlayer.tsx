@@ -204,18 +204,7 @@ const Overlay = styled('div')`
   z-index: 1;
 `;
 
-const OverlayInnerWrapper = styled('div')`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 9px;
-`;
+const OverlayInnerWrapper = <Flex justify="center" direction="column" align="center" gap="9px">{children}</Flex>;
 
 const StyledNegativeSpaceContainer = styled(NegativeSpaceContainer)`
   position: relative;

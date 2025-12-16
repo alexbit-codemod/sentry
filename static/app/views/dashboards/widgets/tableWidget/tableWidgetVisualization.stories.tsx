@@ -483,8 +483,4 @@ function getRenderer(fieldName: string) {
   });
 });
 
-const ButtonContainer = styled('div')`
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-`;
+const ButtonContainer = <Flex justify="center">{children}</Flex>;

@@ -168,25 +168,9 @@ const Grid = styled('div')<{isCompact: boolean}>`
       : ''}
 `;
 
-const TimelineWrapper = styled('div')`
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+const TimelineWrapper = <Flex align="center">{children}</Flex>;
 
-  & > * {
-    height: 20px;
-  }
-`;
-
-const ScrubberWrapper = styled('div')`
-  position: relative;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-`;
+const ScrubberWrapper = <Flex align="center">{children}</Flex>;
 
 const Padded = styled('div')`
   display: flex;

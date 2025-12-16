@@ -189,9 +189,4 @@ const ExampleContainer = styled(NegativeSpaceContainer)`
   flex-direction: column;
 `;
 
-const TimelineContainer = styled('div')`
-  display: flex;
-  align-items: center;
-  height: 40px;
-  width: 100%;
-`;
+const TimelineContainer = <Flex align="center">{children}</Flex>;

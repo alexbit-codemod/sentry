@@ -221,10 +221,7 @@ const StyledInteractionStateLayer = styled(InteractionStateLayer)`
   border-radius: 4px;
 `;
 
-const TrailingItemsWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const TrailingItemsWrapper = <Flex align="center">{children}</Flex>;
 
 const StyledSecondaryNavItem = styled(SecondaryNav.Item)`
   position: relative;
@@ -265,26 +262,9 @@ const UnsavedChangesIndicator = styled('div')<{isActive: boolean}>`
   right: -3px;
 `;
 
-const LeadingItemsWrapper = styled('div')`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+const LeadingItemsWrapper = <Flex align="center" justify="center">{children}</Flex>;
 
-const GrabHandleWrapper = styled(motion.div)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 18px;
-  height: 18px;
-  cursor: grab;
-  z-index: 3;
-
-  &:active {
-    cursor: grabbing;
-  }
-`;
+const GrabHandleWrapper = <Flex align="center" justify="center">{children}</Flex>;
 
 const TruncatedTitle = styled('div')`
   ${p => p.theme.overflowEllipsis}

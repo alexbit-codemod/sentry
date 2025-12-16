@@ -175,24 +175,14 @@ const StyledSentryAppComponentIcon = styled(SentryAppComponentIcon)`
   flex-shrink: 0;
 `;
 
-const IssueLink = styled('div')`
-  display: flex;
-  align-items: center;
-  min-width: 0;
-`;
+const IssueLink = <Flex align="center">{children}</Flex>;
 
 const StyledIntegrationLink = styled(IntegrationLink)<{disabled?: boolean}>`
   color: ${({disabled, theme}) => (disabled ? theme.disabled : theme.textColor)};
   ${p => p.disabled && 'cursor: not-allowed;'}
 `;
 
-const IssueLinkContainer = styled('div')`
-  line-height: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
-`;
+const IssueLinkContainer = <Flex align="center" justify="space-between">{children}</Flex>;
 
 const StyledIcon = styled('span')`
   color: ${p => p.theme.tokens.content.primary};

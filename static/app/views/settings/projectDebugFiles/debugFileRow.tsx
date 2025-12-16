@@ -157,11 +157,7 @@ const StyledTag = styled(Tag)`
   padding: ${space(0.5)};
 `;
 
-const Column = styled('div')`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-`;
+const Column = <Flex direction="column" align="start">{children}</Flex>;
 
 const RightColumn = styled('div')`
   display: flex;

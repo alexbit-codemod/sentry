@@ -102,11 +102,7 @@ export function FeatureFlagOnboardingLayout({
   );
 }
 
-const Steps = styled('div')`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-`;
+const Steps = <Flex direction="column" gap="1.5rem">{children}</Flex>;
 
 const StyledLinkButton = styled(LinkButton)`
   align-self: flex-start;

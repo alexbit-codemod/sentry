@@ -102,12 +102,4 @@ const StaticPanel = styled(FluidHeight)`
   border-radius: ${p => p.theme.radius.md};
 `;
 
-const CTAOverlay = styled('div')`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.5);
-`;
+const CTAOverlay = <Flex justify="center" align="center">{children}</Flex>;

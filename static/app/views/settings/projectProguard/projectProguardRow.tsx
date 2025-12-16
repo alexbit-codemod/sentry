@@ -97,19 +97,9 @@ function ProjectProguardRow({mapping, onDelete, downloadUrl, orgSlug}: Props) {
   );
 }
 
-const NameColumn = styled('div')`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-`;
+const NameColumn = <Flex direction="column" align="start" justify="center">{children}</Flex>;
 
-const SizeColumn = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
-  align-items: center;
-`;
+const SizeColumn = <Flex justify="end" align="center">{children}</Flex>;
 
 const ActionsColumn = styled(SizeColumn)``;
 

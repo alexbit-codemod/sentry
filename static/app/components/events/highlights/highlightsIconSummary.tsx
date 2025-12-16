@@ -275,11 +275,7 @@ const ScreenshotButton = styled(Button)`
   font-weight: normal;
 `;
 
-const DividerWrapper = styled('div')`
-  display: flex;
-  align-items: center;
-  font-size: 1.25rem;
-`;
+const DividerWrapper = <Flex align="center">{children}</Flex>;
 
 const StyledRuntimeText = styled(Text)`
   padding: ${space(0.5)} 0;

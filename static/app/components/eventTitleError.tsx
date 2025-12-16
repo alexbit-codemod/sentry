@@ -14,10 +14,7 @@ function EventTitleError() {
 
 export default EventTitleError;
 
-const Wrapper = styled('span')`
-  display: flex;
-  flex-wrap: wrap;
-`;
+const Wrapper = <Flex wrap="wrap">{children}</Flex>;
 
 const Title = styled('span')`
   margin-right: ${space(0.5)};

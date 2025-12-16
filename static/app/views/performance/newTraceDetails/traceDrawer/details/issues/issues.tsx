@@ -171,13 +171,7 @@ const IconWrapper = styled('div')`
   }
 `;
 
-const SummaryWrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  width: 100%;
-  justify-content: left;
-`;
+const SummaryWrapper = <Flex direction="column" justify="left">{children}</Flex>;
 
 type IssueListProps = {
   issues: TraceTree.TraceIssue[];

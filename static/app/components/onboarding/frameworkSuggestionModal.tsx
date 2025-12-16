@@ -441,27 +441,11 @@ const PlatformList = styled(List)`
   max-height: 631px;
 `;
 
-const StyledPanel = styled(Panel)`
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-`;
+const StyledPanel = <Flex direction="column">{children}</Flex>;
 
-const StyledPanelBody = styled(PanelBody)`
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-`;
+const StyledPanelBody = <Flex direction="column">{children}</Flex>;
 
-const ShowMoreButtonWrapper = styled('div')`
-  min-height: 40px;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  > :first-child {
-    flex: 1;
-  }
-`;
+const ShowMoreButtonWrapper = <Flex align="center">{children}</Flex>;
 
 const PlatformListItem = styled(ListItem)`
   min-height: 40px;

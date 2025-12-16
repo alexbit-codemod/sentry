@@ -833,13 +833,7 @@ function FlamegraphZoomView({
   );
 }
 
-const CanvasContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  position: relative;
-`;
+const CanvasContainer = <Flex direction="column">{children}</Flex>;
 
 const Canvas = styled('canvas')<{
   cursor?: CSSProperties['cursor'];

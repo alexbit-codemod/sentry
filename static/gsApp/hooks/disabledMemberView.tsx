@@ -206,12 +206,7 @@ const MinimalistSidebar = styled('div')`
   padding: 0 ${space(2)};
 `;
 
-const PageContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  min-height: 100vh;
-`;
+const PageContainer = <Flex direction="column">{children}</Flex>;
 
 const DisabledMemberButtonBar = styled(ButtonBar)`
   max-width: fit-content;

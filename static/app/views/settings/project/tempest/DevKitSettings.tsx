@@ -297,12 +297,7 @@ const StepTextSection = styled('div')`
   gap: ${space(1)};
 `;
 
-const StepImageSection = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-`;
+const StepImageSection = <Flex justify="center" align="center">{children}</Flex>;
 
 const CardIllustration = styled('img')`
   width: 100%;

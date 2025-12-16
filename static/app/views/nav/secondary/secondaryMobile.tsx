@@ -60,14 +60,7 @@ const GroupHeader = styled('h2')`
   margin: 0;
 `;
 
-const MobileSecondaryNav = styled('div')`
-  grid-area: content;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  flex-direction: column;
-  overflow-y: auto;
-`;
+const MobileSecondaryNav = <Flex align="stretch" justify="space-between" direction="column">{children}</Flex>;
 
 const HeaderLabel = styled('div')`
   font-size: ${p => p.theme.fontSize.md};

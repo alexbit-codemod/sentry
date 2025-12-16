@@ -96,10 +96,7 @@ const DetailContainer = styled('div')`
   padding: ${space(1)} ${space(2)};
 `;
 
-const FlexBox = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const FlexBox = <Flex align="center">{children}</Flex>;
 
 const Actions = styled(FlexBox)`
   gap: ${space(0.5)};
@@ -722,21 +719,9 @@ const HighlightsWrapper = styled('div')`
   margin: ${space(1)} 0;
 `;
 
-const HighlightsLeftColumn = styled('div')`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
+const HighlightsLeftColumn = <Flex direction="column" justify="center" align="center">{children}</Flex>;
 
-const HighlightsRightColumn = styled('div')`
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  height: 100%;
-  flex: 1;
-  overflow: hidden;
-`;
+const HighlightsRightColumn = <Flex direction="column" justify="left">{children}</Flex>;
 
 function IssuesLink({node, children}: {children: React.ReactNode; node: BaseNode}) {
   const organization = useOrganization();

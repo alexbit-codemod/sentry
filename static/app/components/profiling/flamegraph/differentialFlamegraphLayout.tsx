@@ -189,13 +189,7 @@ const MinimapContainer = styled('div')<{
   flex-direction: column;
 `;
 
-const ZoomViewContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 100%;
-  grid-area: flamegraph;
-  position: relative;
-`;
+const ZoomViewContainer = <Flex direction="column">{children}</Flex>;
 const ZoomViewInnerContainer = styled('div')`
   flex: 1;
 `;

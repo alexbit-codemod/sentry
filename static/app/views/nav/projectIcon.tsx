@@ -49,13 +49,7 @@ function ProjectIcon({projectPlatforms, allProjects, className}: ProjectIconProp
   );
 }
 
-const IconWrap = styled('div')`
-  display: flex;
-  flex-shrink: 0;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
+const IconWrap = <Flex direction="column" align="center" justify="center">{children}</Flex>;
 
 const IconContainer = styled('div')`
   position: relative;

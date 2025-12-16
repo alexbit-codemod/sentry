@@ -456,18 +456,7 @@ const DifferentialFlamegraphFunctionSecondaryStats = styled('div')`
   font-size: ${p => p.theme.fontSize.sm};
 `;
 
-const DifferentialFlamegraphChangedFunctionNameLink = styled(Link)`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  white-space: nowrap;
-
-  > span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    min-width: 0;
-  }
-`;
+const DifferentialFlamegraphChangedFunctionNameLink = <Flex direction="row" align="center">{children}</Flex>;
 
 const DifferentialFlamegraphChangedFunctionModule = styled('div')`
   color: ${p => p.theme.subText};
@@ -549,12 +538,7 @@ function DifferentialFlamegraphLegend() {
   );
 }
 
-const DifferentialFlamegraphLegendContainer = styled('div')`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-`;
+const DifferentialFlamegraphLegendContainer = <Flex direction="row" justify="space-between" align="center">{children}</Flex>;
 
 const DifferentialFlamegraphLegendBar = styled('div')`
   width: 60px;
@@ -596,11 +580,7 @@ function DifferentialFlamegraphChangedFunctionsTitle(props: {
   );
 }
 
-const DifferentialFlamegraphChangedFunctionsTitleContainer = styled('div')`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
+const DifferentialFlamegraphChangedFunctionsTitleContainer = <Flex justify="space-between" align="center">{children}</Flex>;
 
 const DifferentialFlamegraphChangedFunctionsTitleText = styled('div')`
   font-weight: ${p => p.theme.fontWeight.bold};
@@ -637,14 +617,7 @@ const ErrorMessageContainer = styled('div')`
   padding: ${space(2)} ${space(4)};
 `;
 
-const LoadingIndicatorContainer = styled('div')`
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-`;
+const LoadingIndicatorContainer = <Flex direction="column" justify="center">{children}</Flex>;
 
 const DifferentialFlamegraphContainer = styled('div')`
   position: relative;

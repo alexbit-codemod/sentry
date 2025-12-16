@@ -80,13 +80,7 @@ function Headers({
 
 export default Headers;
 
-const GraphLabel = styled(IssueStreamHeaderLabel)`
-  width: 175px;
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-`;
+const GraphLabel = <Flex justify="space-between">{children}</Flex>;
 
 const GraphToggles = styled('div')`
   font-weight: ${p => p.theme.fontWeight.normal};

@@ -90,14 +90,7 @@ const CollapsibleTimelineContainer = styled('div')<{labelHeight: number}>`
   height: calc(100% - ${p => p.labelHeight}px);
 `;
 
-const CollapsibleTimelineLoadingIndicatorContainer = styled('div')`
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-`;
+const CollapsibleTimelineLoadingIndicatorContainer = <Flex direction="column" justify="center">{children}</Flex>;
 
 const CollapsibleTimelineHeader = styled('div')<{
   border: string;

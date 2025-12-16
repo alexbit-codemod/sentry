@@ -221,14 +221,6 @@ const DisabledLabel = styled('div')`
   overflow: hidden; /* Needed so that "Add to team" button can fit */
 `;
 
-const StyledSelectControl = styled(Select)`
-  .Select-value {
-    display: flex;
-    align-items: center;
-  }
-  .Select-input {
-    margin-left: 32px;
-  }
-`;
+const StyledSelectControl = <Flex align="center">{children}</Flex>;
 
 export default withApi(SelectMembers);

@@ -2,13 +2,6 @@ import styled from '@emotion/styled';
 
 import EmptyStateWarning from 'sentry/components/emptyStateWarning';
 
-const StyledEmptyStateWarning = styled(EmptyStateWarning)`
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
+const StyledEmptyStateWarning = <Flex direction="column" align="center" justify="center">{children}</Flex>;
 
 export default StyledEmptyStateWarning;

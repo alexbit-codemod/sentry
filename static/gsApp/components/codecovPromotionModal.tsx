@@ -138,10 +138,7 @@ const InnerContent = styled('div')`
   font-size: ${p => p.theme.fontSize.lg};
 `;
 
-const PriceWrapper = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const PriceWrapper = <Flex direction="column">{children}</Flex>;
 
 const SeatText = styled('div')`
   font-size: ${p => p.theme.fontSize.sm};

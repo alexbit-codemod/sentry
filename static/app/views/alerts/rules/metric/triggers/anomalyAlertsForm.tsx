@@ -129,12 +129,7 @@ class AnomalyDetectionFormField extends Component<Props> {
   }
 }
 
-const StyledField = styled(FieldGroup)`
-  & > label > div:first-child > span {
-    display: flex;
-    flex-direction: row;
-  }
-`;
+const StyledField = <Flex direction="row">{children}</Flex>;
 
 const SelectContainer = styled('div')`
   flex: 1;

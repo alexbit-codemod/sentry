@@ -158,11 +158,7 @@ export function ScreenshotCard({
   );
 }
 
-const ScreenshotInfo = styled('div')`
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-`;
+const ScreenshotInfo = <Flex direction="column">{children}</Flex>;
 
 const StyledCard = styled(Card)`
   margin: 0;

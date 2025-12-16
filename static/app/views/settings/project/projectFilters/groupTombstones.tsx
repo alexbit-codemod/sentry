@@ -274,10 +274,7 @@ const StyledPanelTable = styled(PanelTable)`
     max-content max-content max-content max-content;
 `;
 
-const Column = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const Column = <Flex align="center">{children}</Flex>;
 
 const RightAlignedColumn = styled(Column)`
   justify-content: flex-end;

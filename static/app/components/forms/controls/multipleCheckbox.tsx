@@ -111,10 +111,7 @@ MultipleCheckbox.Item = Item;
 
 export default MultipleCheckbox;
 
-const MultipleCheckboxWrapper = styled('div')`
-  display: flex;
-  flex-wrap: wrap;
-`;
+const MultipleCheckboxWrapper = <Flex wrap="wrap">{children}</Flex>;
 
 const Label = styled('label')`
   display: inline-flex;

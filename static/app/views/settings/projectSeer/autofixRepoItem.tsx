@@ -308,12 +308,7 @@ export function AutofixRepoItem({repo, onRemove, settings, onSettingsChange}: Pr
   );
 }
 
-const SelectedRepoContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  overflow: hidden;
-`;
+const SelectedRepoContainer = <Flex direction="column">{children}</Flex>;
 
 const SelectedRepoHeader = styled('div')`
   position: relative;
@@ -402,10 +397,7 @@ const ClearButton = styled(Button)`
   }
 `;
 
-const RepoNameAndExpandToggle = styled('div')`
-  display: flex;
-  align-items: center;
-`;
+const RepoNameAndExpandToggle = <Flex align="center">{children}</Flex>;
 
 const StyledIconExpandToggle = styled(IconExpandToggle)`
   margin-right: ${space(0.5)};

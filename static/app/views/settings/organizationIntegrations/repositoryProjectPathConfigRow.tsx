@@ -78,10 +78,7 @@ export default function RepositoryProjectPathConfigRow({
   );
 }
 
-const ProjectRepoHolder = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const ProjectRepoHolder = <Flex direction="column">{children}</Flex>;
 
 const RepoName = styled(`span`)`
   padding-bottom: ${space(1)};

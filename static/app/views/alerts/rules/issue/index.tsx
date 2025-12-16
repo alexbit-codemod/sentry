@@ -1616,10 +1616,7 @@ const StyledFieldHelp = styled(FieldHelp)`
   }
 `;
 
-const SetConditionsListItem = styled(StyledListItem)`
-  display: flex;
-  justify-content: space-between;
-`;
+const SetConditionsListItem = <Flex justify="space-between">{children}</Flex>;
 
 const Step = styled('div')`
   position: relative;
@@ -1632,12 +1629,7 @@ const StepHeader = styled('h5')`
   margin-bottom: ${space(1)};
 `;
 
-const StepContainer = styled('div')`
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  flex-grow: 1;
-`;
+const StepContainer = <Flex align="start">{children}</Flex>;
 
 const StepContent = styled('div')`
   flex-grow: 1;

@@ -538,13 +538,7 @@ const ActionContainer = styled('div')`
   gap: ${space(2)};
 `;
 
-const EmptyResultsContainer = styled('div')`
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
+const EmptyResultsContainer = <Flex direction="column" align="center" justify="center">{children}</Flex>;
 
 const EmptyResultsBody = styled('div')`
   font-size: 16px;

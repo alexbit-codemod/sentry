@@ -20,13 +20,6 @@ const ListItem = styled(
   ${p => p.symbol && `padding-left: ${p.padding ?? space(4)};`}
 `;
 
-const Symbol = styled('div')`
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 22.5px;
-`;
+const Symbol = <Flex align="center">{children}</Flex>;
 
 export default ListItem;

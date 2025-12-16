@@ -337,19 +337,7 @@ function CancelSubscriptionWrapper({subscription}: CancelSubscriptionWrapperProp
   );
 }
 
-const RadioContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-
-  label {
-    grid-template-columns: max-content 1fr;
-    grid-template-rows: auto auto;
-
-    > div:last-child {
-      grid-column: 2;
-    }
-  }
-`;
+const RadioContainer = <Flex direction="column">{children}</Flex>;
 
 const RadioGroupContainer = styled(RadioGroupField)`
   label {

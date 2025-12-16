@@ -343,13 +343,7 @@ const StyledProjectBadge = styled(ProjectBadge)`
   font-weight: bold;
 `;
 
-const StyledAccordionTitle = styled('div')`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-`;
+const StyledAccordionTitle = <Flex justify="space-between" align="center">{children}</Flex>;
 
 const AccordionRowContainer = styled('div')`
   display: flex;

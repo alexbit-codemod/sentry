@@ -141,10 +141,7 @@ export function ExplorerSeerSectionCtaButton({
   );
 }
 
-const Container = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
+const Container = <Flex direction="column">{children}</Flex>;
 
 const StyledButton = styled(LinkButton)`
   margin-top: ${p => p.theme.space.md};
