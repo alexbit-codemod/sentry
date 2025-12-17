@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import styled from '@emotion/styled';
 
 import {ExternalLink} from 'sentry/components/core/link';
@@ -59,6 +60,8 @@ function ConnectedHttpSnippet() {
 }
 
 export function UptimeDetectorFormDetectSection() {
+const t = useTranslations("uptime-detector-form");
+
   return (
     <Container>
       <Section title={t('Detect')}>
@@ -138,7 +141,7 @@ export function UptimeDetectorFormDetectSection() {
             maxRows={15}
             autosize
             monospace
-            placeholder='{"key": "value"}'
+            placeholder={t('placeholders.json-body-example')}
             flexibleControlStateSize
           />
           <BooleanField

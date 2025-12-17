@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import {Fragment} from 'react';
 import styled from '@emotion/styled';
 
@@ -31,6 +32,8 @@ export function TitleCell({
   warning,
   openInNewTab,
 }: TitleCellProps) {
+const t = useTranslations("workflow-engine-title-cell");
+
   const content = (
     <Fragment>
       <Name>
@@ -45,13 +48,13 @@ export function TitleCell({
             &mdash;
             <Tooltip title={warning.message} skipWrapper>
               <Flex gap="sm" align="center">
-                {warning.color === 'danger' && <Text variant="danger">Invalid</Text>}
+                {warning.color === 'danger' && <Text variant="danger">{t('status.invalid')}</Text>}
                 <IconWarning color={warning.color} />
               </Flex>
             </Tooltip>
           </Fragment>
         )}
-        {disabled && <DisabledText>&mdash; Disabled</DisabledText>}
+        {disabled && <DisabledText>{t('status.disabled')}</DisabledText>}
       </Name>
       {defined(details) && <DetailsWrapper>{details}</DetailsWrapper>}
     </Fragment>
