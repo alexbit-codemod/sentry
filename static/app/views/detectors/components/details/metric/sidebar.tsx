@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import {Fragment} from 'react';
 import {Link} from 'react-router-dom';
 
@@ -19,6 +20,8 @@ interface DetectorDetailsSidebarProps {
 }
 
 function GoToMetricAlert({detector}: {detector: MetricDetector}) {
+const t = useTranslations("metric-detector-sidebar");
+
   const organization = useOrganization();
   const user = useUser();
   if (!user.isSuperuser || !detector.alertRuleId) {
@@ -32,9 +35,7 @@ function GoToMetricAlert({detector}: {detector: MetricDetector}) {
           to={normalizeUrl(
             `/organizations/${organization.slug}/issues/alerts/rules/details/${detector.alertRuleId}/`
           )}
-        >
-          View Metric Alert
-        </Link>
+        >{t('links.view-metric-alert')}</Link>
       </Tooltip>
     </div>
   );

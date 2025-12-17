@@ -1,0 +1,18 @@
+{
+  "uptime-detector-form": {
+    "placeholders": {
+      "json-body-example": "'{\"key\": \"value\"}'"
+    }
+  },
+  "metric-detector-sidebar": {
+    "links": {
+      "view-metric-alert": "View Metric Alert"
+    }
+  },
+  "workflow-engine-title-cell": {
+    "status": {
+      "invalid": "Invalid",
+      "disabled": "— Disabled"
+    }
+  }
+}
