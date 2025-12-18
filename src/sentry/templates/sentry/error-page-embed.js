@@ -1,4 +1,4 @@
-/* eslint strict:0,block-scoped-var:0 */
+
 /* global sentryEmbedCallback:false */
 (function (window, document, JSON) {
   'use strict';
@@ -13,7 +13,7 @@
     };
    */
 
-  /* eslint-disable spaced-comment */
+  
   var strings = /*{{ strings }}*/ '';
   var template = /*{{ template }}*/ '';
   var endpoint = /*{{ endpoint }}*/ '';
