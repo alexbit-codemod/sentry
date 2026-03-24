@@ -22,11 +22,14 @@ describe('DropdownActions', () => {
 
     await userEvent.click(screen.getByText('Trigger'));
     await userEvent.click(screen.getByText('Option'));
-    expect(screen.queryByTestId('disabled-icon')).not.toBeInTheDocument();
+    expect(screen.queryByRole('option', {name: 'Option'})).not.toHaveAttribute(
+      'aria-disabled',
+      'true'
+    );
     expect(cb).toHaveBeenCalled();
   });
 
-  it('disabled actions have an icon', async () => {
+  it('disabled actions have an icon and are aria-disabled', async () => {
     const cb = jest.fn();
     render(
       <DropdownActions
@@ -36,6 +39,9 @@ describe('DropdownActions', () => {
     );
 
     await userEvent.click(screen.getByText('Trigger'));
-    expect(await screen.findByTestId('disabled-icon')).toBeInTheDocument();
+    expect(await screen.findByRole('option', {name: 'Disabled Option'})).toHaveAttribute(
+      'aria-disabled',
+      'true'
+    );
   });
 });

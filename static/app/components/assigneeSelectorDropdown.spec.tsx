@@ -125,7 +125,7 @@ describe('AssigneeSelectorDropdown', () => {
 
   // Doesn't need to always be async, but it was easier to prevent flakes this way
   const openMenu = async () => {
-    await userEvent.click(await screen.findByTestId('assignee-selector'), undefined);
+    await userEvent.click(await screen.findByRole('button', {name: 'Assign issue'}), undefined);
   };
 
   const updateGroupSpy = jest.fn();

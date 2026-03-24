@@ -76,7 +76,7 @@ describe('Quick Context Actions', () => {
       ContextValueType.STRING
     );
 
-    const trigger = await screen.findByTestId('quick-context-action-trigger');
+    const trigger = await screen.findByRole('button', {name: 'Quick Context Action Menu'});
     expect(trigger).toBeInTheDocument();
 
     await userEvent.click(trigger);
@@ -98,7 +98,7 @@ describe('Quick Context Actions', () => {
       ContextValueType.DURATION
     );
 
-    const trigger = await screen.findByTestId('quick-context-action-trigger');
+    const trigger = await screen.findByRole('button', {name: 'Quick Context Action Menu'});
     expect(trigger).toBeInTheDocument();
 
     await userEvent.click(trigger);
@@ -120,7 +120,7 @@ describe('Quick Context Actions', () => {
       ContextValueType.DURATION
     );
 
-    const trigger = await screen.findByTestId('quick-context-action-trigger');
+    const trigger = await screen.findByRole('button', {name: 'Quick Context Action Menu'});
     expect(trigger).toBeInTheDocument();
 
     await userEvent.click(trigger);
@@ -148,7 +148,7 @@ describe('Quick Context Actions', () => {
       ContextValueType.STRING
     );
 
-    const trigger = await screen.findByTestId('quick-context-action-trigger');
+    const trigger = await screen.findByRole('button', {name: 'Quick Context Action Menu'});
     expect(trigger).toBeInTheDocument();
 
     await userEvent.click(trigger);
@@ -176,7 +176,7 @@ describe('Quick Context Actions', () => {
       ContextValueType.STRING
     );
 
-    const trigger = await screen.findByTestId('quick-context-action-trigger');
+    const trigger = await screen.findByRole('button', {name: 'Quick Context Action Menu'});
     expect(trigger).toBeInTheDocument();
 
     await userEvent.click(trigger);
@@ -206,7 +206,7 @@ describe('Quick Context Actions', () => {
       ContextValueType.DURATION
     );
 
-    const trigger = await screen.findByTestId('quick-context-action-trigger');
+    const trigger = await screen.findByRole('button', {name: 'Quick Context Action Menu'});
     expect(trigger).toBeInTheDocument();
 
     await userEvent.click(trigger);
@@ -236,7 +236,7 @@ describe('Quick Context Actions', () => {
       ContextValueType.DURATION
     );
 
-    const trigger = await screen.findByTestId('quick-context-action-trigger');
+    const trigger = await screen.findByRole('button', {name: 'Quick Context Action Menu'});
     expect(trigger).toBeInTheDocument();
 
     await userEvent.click(trigger);

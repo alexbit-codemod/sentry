@@ -118,11 +118,11 @@ describe('DatabaseSystemSelector', () => {
 
     await userEvent.click(dropdownButton);
 
-    const dropdownOptionLabels = await screen.findAllByTestId('menu-list-item-label');
-    expect(dropdownOptionLabels[0]).toHaveTextContent('PostgreSQL');
-    expect(dropdownOptionLabels[1]).toHaveTextContent('MongoDB');
+    const dropdownOptions = await screen.findAllByRole('option');
+    expect(dropdownOptions[0]).toHaveTextContent('PostgreSQL');
+    expect(dropdownOptions[1]).toHaveTextContent('MongoDB');
     // chungusdb should not be added as an option
-    expect(dropdownOptionLabels).toHaveLength(2);
+    expect(dropdownOptions).toHaveLength(2);
   });
 
   it('chooses the currently selected system from localStorage', async () => {
