@@ -521,6 +521,7 @@ export function AssigneeSelectorDropdown({
         {!loading && !noDropdown && (
           <AssigneeTrigger
             priority="transparent"
+            aria-label={t('Assign issue')}
             data-test-id="assignee-selector"
             {...props}
           >

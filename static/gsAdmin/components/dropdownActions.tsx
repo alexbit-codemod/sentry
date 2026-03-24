@@ -40,7 +40,7 @@ function mapActionsToCompactSelect(
         label: (
           <div>
             {action.name}
-            {action.disabled && <StyledIconNot data-test-id="disabled-icon" size="xs" />}
+            {action.disabled && <StyledIconNot data-test-id="disabled-icon" aria-hidden size="xs" />}
           </div>
         ),
         // This is required for compact select searching to work
