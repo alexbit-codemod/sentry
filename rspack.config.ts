@@ -1,4 +1,4 @@
-/* eslint-env node */
+
 /* eslint import/no-nodejs-modules:0 */
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
