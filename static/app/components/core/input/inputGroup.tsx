@@ -15,7 +15,7 @@ import type {FormSize, StrictCSSObject, Theme} from 'sentry/utils/theme';
 
 // There is a cycle here if we import textarea from scraps.
 // eslint-disable-next-line no-relative-import-paths/no-relative-import-paths
-import type {TextAreaProps} from '../textarea';
+import { TextAreaProps } from '../textarea/textarea';
 // eslint-disable-next-line  no-relative-import-paths/no-relative-import-paths
 import {TextArea as CoreTextArea} from '../textarea';
 

@@ -1,6 +1,6 @@
 import {render, screen} from 'sentry-test/reactTestingLibrary';
 
-import {Input} from '.';
+import { Input } from './input';
 
 describe('Input', () => {
   it('maps nativeSize to size', () => {
