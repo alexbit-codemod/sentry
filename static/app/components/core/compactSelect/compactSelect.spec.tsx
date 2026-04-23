@@ -7,7 +7,7 @@ import {OverlayTrigger} from '@sentry/scraps/overlayTrigger';
 
 import {DropdownButton} from 'sentry/components/dropdownButton';
 
-import {CompactSelect, type SelectOption} from './';
+import { CompactSelect, SelectOption } from './compactSelect';
 
 describe('CompactSelect', () => {
   describe('types', () => {
