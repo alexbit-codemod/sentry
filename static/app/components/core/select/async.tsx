@@ -10,8 +10,8 @@ import {t} from 'sentry/locale';
 import {handleXhrErrorResponse} from 'sentry/utils/handleXhrErrorResponse';
 import type {RequestError} from 'sentry/utils/requestError/requestError';
 
-import type {ControlProps, GeneralSelectValue} from './';
-import {Select} from './';
+import { ControlProps, GeneralSelectValue } from './select';
+import { Select } from './select';
 
 export type Result = {
   label: string | React.ReactNode;

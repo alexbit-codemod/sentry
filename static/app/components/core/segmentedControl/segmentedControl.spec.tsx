@@ -2,7 +2,7 @@ import {useState} from 'react';
 
 import {render, screen, userEvent} from 'sentry-test/reactTestingLibrary';
 
-import {SegmentedControl} from './';
+import { SegmentedControl } from './segmentedControl';
 
 describe('SegmentedControl', () => {
   it('renders with uncontrolled value', async () => {
